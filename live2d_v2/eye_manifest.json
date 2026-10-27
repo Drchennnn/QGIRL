@@ -1,0 +1,92 @@
+{
+  "canvas": [
+    1024,
+    1536
+  ],
+  "layers": [
+    {
+      "name": "eyewhite_screen_left",
+      "file": "assets/eyes/eyewhite_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "iris_screen_left",
+      "file": "assets/eyes/iris_neutral_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "eye_socket_screen_left",
+      "file": "assets/eyes/eye_socket_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "eyewhite_screen_right",
+      "file": "assets/eyes/eyewhite_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "iris_screen_right",
+      "file": "assets/eyes/iris_neutral_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "eye_socket_screen_right",
+      "file": "assets/eyes/eye_socket_screen_right.png",
+      "visible": true
+    }
+  ],
+  "eyes": {
+    "screen_left": {
+      "box": [
+        431,
+        171,
+        490,
+        212
+      ],
+      "center": [
+        468,
+        193
+      ],
+      "rangePixels": {
+        "x": [
+          -4,
+          4
+        ],
+        "y": [
+          -2,
+          2
+        ]
+      },
+      "irisPixels": 630
+    },
+    "screen_right": {
+      "box": [
+        526,
+        170,
+        586,
+        212
+      ],
+      "center": [
+        549,
+        193
+      ],
+      "rangePixels": {
+        "x": [
+          -4,
+          4
+        ],
+        "y": [
+          -2,
+          2
+        ]
+      },
+      "irisPixels": 666
+    }
+  },
+  "runtime": {
+    "iris": "assets/eyes/iris_{side}.png",
+    "aperture": "assets/eyes/aperture_{side}.png",
+    "clipping": "translate iris then destination-in stationary aperture",
+    "cameraTracking": false
+  }
+}

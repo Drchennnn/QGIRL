@@ -1,0 +1,115 @@
+{
+  "canvas": [
+    1024,
+    1536
+  ],
+  "layers": [
+    {
+      "name": "eyewhite_screen_left",
+      "file": "assets/eyes/eyewhite_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "iris_screen_left",
+      "file": "assets/eyes/iris_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "lower_lid_screen_left",
+      "file": "assets/eyes/lower_lid_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "upper_lid_screen_left",
+      "file": "assets/eyes/upper_lid_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "eyewhite_screen_right",
+      "file": "assets/eyes/eyewhite_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "iris_screen_right",
+      "file": "assets/eyes/iris_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "lower_lid_screen_right",
+      "file": "assets/eyes/lower_lid_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "upper_lid_screen_right",
+      "file": "assets/eyes/upper_lid_screen_right.png",
+      "visible": true
+    }
+  ],
+  "eyes": {
+    "screen_left": {
+      "box": [
+        431,
+        171,
+        490,
+        213
+      ],
+      "center": [
+        468,
+        193
+      ],
+      "rangePixels": {
+        "x": [
+          -4,
+          4
+        ],
+        "y": [
+          -2,
+          2
+        ]
+      },
+      "aperturePixels": 986,
+      "painterOrder": [
+        "eyewhite_screen_left",
+        "iris_screen_left",
+        "lower_lid_screen_left",
+        "upper_lid_screen_left"
+      ]
+    },
+    "screen_right": {
+      "box": [
+        526,
+        171,
+        586,
+        213
+      ],
+      "center": [
+        549,
+        193
+      ],
+      "rangePixels": {
+        "x": [
+          -4,
+          4
+        ],
+        "y": [
+          -2,
+          2
+        ]
+      },
+      "aperturePixels": 1114,
+      "painterOrder": [
+        "eyewhite_screen_right",
+        "iris_screen_right",
+        "lower_lid_screen_right",
+        "upper_lid_screen_right"
+      ]
+    }
+  },
+  "runtime": {
+    "iris": "assets/eyes/iris_full_{side}.png",
+    "aperture": "assets/eyes/aperture_{side}.png",
+    "apertureAlpha": "assets/eyes/aperture_alpha_{side}.png",
+    "clipping": "translate complete iris, destination-in inset aperture, then composite fixed lids",
+    "cameraTracking": false
+  }
+}

@@ -1,0 +1,4 @@
+Using project credential: primary-existing
+[BeefAPI Image2] Editing one gpt-image-2.5-sunburst image at 1024x1536 via env; this consumes BeefAPI quota and may take a couple of minutes…
+[BeefAPI Image2] Verified canvas: {"source_size":"1024x1536","delivered_size":"1024x1536","fit":"native","operation":"native","upscaled":false}
+[BeefAPI Image2] Wrote /Users/Link/code/Character/live2d_v1/generation/front_master.png

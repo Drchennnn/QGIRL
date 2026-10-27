@@ -1,0 +1,23 @@
+{
+  "componentCount": 6,
+  "names": [
+    "face",
+    "ear_screen_left",
+    "ear_screen_right",
+    "nose",
+    "mouth",
+    "neck_bridge"
+  ],
+  "backgrounds": [
+    "checker",
+    "white",
+    "dark"
+  ],
+  "modes": [
+    "mother",
+    "native",
+    "zoom"
+  ],
+  "errors": [],
+  "passed": true
+}

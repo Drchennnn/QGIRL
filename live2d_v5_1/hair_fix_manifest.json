@@ -1,0 +1,57 @@
+{
+  "canvas": [
+    1024,
+    1536
+  ],
+  "source": {
+    "file": "generation/hair_fix/hair_ear_cheek_repair.png",
+    "sha256": "e53d6aa60cb6d675ff4de98101b29f96f4221074894f947596166af08d8b7232",
+    "method": "Official built-in image generation; ear openings and cheek tips repaired in full-resolution alpha artwork",
+    "model": "not exposed by built-in tool",
+    "legacyEarHoleMaskApplied": false,
+    "buildScript": "scripts/refine_hair_fix.py",
+    "registration": {
+      "fullSourceSize": [
+        1232,
+        1277
+      ],
+      "targetSize": [
+        290,
+        300
+      ],
+      "position": [
+        365,
+        15
+      ]
+    }
+  },
+  "layers": {
+    "hair_front_fixed": {
+      "file": "assets/hair_refined/hair_front_fixed.png",
+      "sha256": "4612e40f44df9ad9ede8c7ddae66eb05de93c03f768eff23987f8350ba51f1a3",
+      "bbox": [
+        366,
+        21,
+        653,
+        303
+      ]
+    },
+    "hair_fringe_center": {
+      "file": "assets/hair_refined/hair_fringe_center.png",
+      "sha256": "c7c7e83a4cf42a0b53e57ec26578b3ced984f42f4bf49b9898af8bfe292ad928",
+      "bbox": [
+        470,
+        82,
+        536,
+        189
+      ]
+    }
+  },
+  "fringeSemanticSelection": {
+    "file": "live2d_v5/assets/hair_refined/hair_fringe_center.png",
+    "sha256": "4e5ad4305b676bcb39f4da79e1b6fda44a3d87732064abb59b85c0b9e7725787",
+    "method": "approved v5 center fringe support only; no source RGB reused; never used as ear opening"
+  },
+  "scope": "Two front hair layers only; all other 31 layers byte-identical to v5",
+  "generationLog": "generation/hair_fix/generation_log.json"
+}

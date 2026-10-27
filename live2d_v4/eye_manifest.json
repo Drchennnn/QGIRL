@@ -1,0 +1,492 @@
+{
+  "canvas": [
+    1024,
+    1536
+  ],
+  "layers": [
+    {
+      "name": "eyewhite_screen_left",
+      "file": "assets/eyes/eyewhite_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "iris_screen_left",
+      "file": "assets/eyes/iris_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "lower_lid_screen_left",
+      "file": "assets/eyes/lower_lid_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "upper_lid_screen_left",
+      "file": "assets/eyes/upper_lid_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "eyewhite_screen_right",
+      "file": "assets/eyes/eyewhite_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "iris_screen_right",
+      "file": "assets/eyes/iris_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "lower_lid_screen_right",
+      "file": "assets/eyes/lower_lid_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "upper_lid_screen_right",
+      "file": "assets/eyes/upper_lid_screen_right.png",
+      "visible": true
+    }
+  ],
+  "eyes": {
+    "screen_left": {
+      "box": [
+        431,
+        171,
+        491,
+        214
+      ],
+      "center": [
+        468,
+        193
+      ],
+      "rangePixels": {
+        "x": [
+          -4,
+          4
+        ],
+        "y": [
+          -2,
+          2
+        ]
+      },
+      "painterOrder": [
+        "eyewhite_screen_left",
+        "iris_screen_left",
+        "lower_lid_screen_left",
+        "upper_lid_screen_left"
+      ]
+    },
+    "screen_right": {
+      "box": [
+        526,
+        171,
+        588,
+        214
+      ],
+      "center": [
+        549,
+        193
+      ],
+      "rangePixels": {
+        "x": [
+          -4,
+          4
+        ],
+        "y": [
+          -2,
+          2
+        ]
+      },
+      "painterOrder": [
+        "eyewhite_screen_right",
+        "iris_screen_right",
+        "lower_lid_screen_right",
+        "upper_lid_screen_right"
+      ]
+    }
+  },
+  "runtime": {
+    "iris": "assets/eyes/iris_full_{side}.png",
+    "aperture": "assets/eyes/aperture_{side}.png",
+    "apertureAlpha": "assets/eyes/aperture_alpha_{side}.png",
+    "clipping": "move full iris, destination-in true-alpha aperture derived from generated eyelid boundaries; fixed generated eyelids above",
+    "cameraTracking": false
+  },
+  "artwork": {
+    "sourcePolicy": "generated-only",
+    "tool": "official built-in image_gen",
+    "model": "not exposed",
+    "generationCalls": 14,
+    "components": {
+      "upper_lid_screen_left": {
+        "generatedSource": "generation/eyes/upper_lid_screen_left.png",
+        "sourceSha256": "33d47f147f35725d7810c4aa16403e53673da5adeccc55e07074d8af44593dac",
+        "cleanedSource": "generation/eyes/upper_lid_screen_left_clean.png",
+        "registeredFile": "assets/eyes/upper_lid_screen_left.png",
+        "sha256": "cdd21a2d4c7eb90601d05948aec798ea84e6635ad22099b33485a20dc38474c5",
+        "bbox": [
+          430,
+          178,
+          490,
+          195
+        ],
+        "sourceContentBox": [
+          87,
+          100,
+          2088,
+          647
+        ],
+        "sourceSize": [
+          2164,
+          726
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.029985007496251874,
+          "x": 430,
+          "y": 178,
+          "resizedCrop": [
+            60,
+            17
+          ]
+        },
+        "cleanup": {
+          "method": "remove tiny isolated specks; sclera alpha opening/closing at source size only",
+          "removedSpeckPixels": 1710
+        }
+      },
+      "upper_lid_screen_right": {
+        "generatedSource": "generation/eyes/upper_lid_screen_right.png",
+        "sourceSha256": "1b6015baceceb3b0e1c34ed3abeca4652a7e3de463a7d9d6a8813f41a83882db",
+        "cleanedSource": "generation/eyes/upper_lid_screen_right_clean.png",
+        "registeredFile": "assets/eyes/upper_lid_screen_right.png",
+        "sha256": "c9b72a4222899059f93e9eeac8b6b515472a2e61981c7165dc01a4919516b7ba",
+        "bbox": [
+          525,
+          178,
+          587,
+          193
+        ],
+        "sourceContentBox": [
+          85,
+          113,
+          2130,
+          583
+        ],
+        "sourceSize": [
+          2164,
+          726
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.030317848410757946,
+          "x": 525,
+          "y": 178,
+          "resizedCrop": [
+            62,
+            15
+          ]
+        },
+        "cleanup": {
+          "method": "remove tiny isolated specks; sclera alpha opening/closing at source size only",
+          "removedSpeckPixels": 3413
+        }
+      },
+      "lower_lid_screen_left": {
+        "generatedSource": "generation/eyes/lower_lid_screen_left.png",
+        "sourceSha256": "00987a6551156b2b4528cbe6cbc420fbb80dd5fb1d02bb26757c951f4a93e64a",
+        "cleanedSource": "generation/eyes/lower_lid_screen_left_clean.png",
+        "registeredFile": "assets/eyes/lower_lid_screen_left.png",
+        "sha256": "f37803af3c81079fc4e17b719ea916d1ba0bff0732f093093b871fc98886975d",
+        "bbox": [
+          443,
+          189,
+          486,
+          209
+        ],
+        "sourceContentBox": [
+          104,
+          420,
+          1152,
+          888
+        ],
+        "sourceSize": [
+          1254,
+          1254
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.04103053435114504,
+          "x": 443,
+          "y": 189,
+          "resizedCrop": [
+            43,
+            20
+          ]
+        },
+        "cleanup": {
+          "method": "remove tiny isolated specks; sclera alpha opening/closing at source size only",
+          "removedSpeckPixels": 9507
+        }
+      },
+      "lower_lid_screen_right": {
+        "generatedSource": "generation/eyes/lower_lid_screen_right.png",
+        "sourceSha256": "becdd539e11aae23359486fdbca077988f2c1822752647d6cccc7e51dd8297a1",
+        "cleanedSource": "generation/eyes/lower_lid_screen_right_clean.png",
+        "registeredFile": "assets/eyes/lower_lid_screen_right.png",
+        "sha256": "db69c041e71a7bd3c5187104fb9cdc14896873514806cce48a6576bd6ebf44a1",
+        "bbox": [
+          532,
+          189,
+          579,
+          209
+        ],
+        "sourceContentBox": [
+          157,
+          468,
+          1161,
+          893
+        ],
+        "sourceSize": [
+          1254,
+          1254
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.045816733067729085,
+          "x": 532,
+          "y": 189,
+          "resizedCrop": [
+            47,
+            20
+          ]
+        },
+        "cleanup": {
+          "method": "remove tiny isolated specks; sclera alpha opening/closing at source size only",
+          "removedSpeckPixels": 680
+        }
+      },
+      "eyewhite_screen_left": {
+        "generatedSource": "generation/eyes/eyewhite_screen_left.png",
+        "sourceSha256": "eb5693181200cf090dc96ae5a490f3f018ad0a3ab4606ea71fa2a2c8482b6cbc",
+        "cleanedSource": "generation/eyes/eyewhite_screen_left_clean.png",
+        "registeredFile": "assets/eyes/eyewhite_full_screen_left.png",
+        "sha256": "68a9eea46a38c82cfa1c092e65b9be527cf0fbb974f5f40bf4c44ffeadfd32d9",
+        "bbox": [
+          438,
+          179,
+          495,
+          210
+        ],
+        "sourceContentBox": [
+          72,
+          192,
+          1441,
+          918
+        ],
+        "sourceSize": [
+          1510,
+          1042
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.04163623082542001,
+          "x": 438,
+          "y": 179,
+          "resizedCrop": [
+            57,
+            31
+          ]
+        },
+        "cleanup": {
+          "method": "remove tiny isolated specks; sclera alpha opening/closing at source size only",
+          "removedSpeckPixels": 6174
+        }
+      },
+      "eyewhite_screen_right": {
+        "generatedSource": "generation/eyes/eyewhite_screen_right.png",
+        "sourceSha256": "0e63bff971cc61074e183b3b7562fb13196b75365ca127e24ab34d44a3979fb6",
+        "cleanedSource": "generation/eyes/eyewhite_screen_right_clean.png",
+        "registeredFile": "assets/eyes/eyewhite_full_screen_right.png",
+        "sha256": "e379ab31ab254686b78490a6bf65d3f8238f2394e0c57fdb9c33a187da7b1acf",
+        "bbox": [
+          525,
+          178,
+          584,
+          210
+        ],
+        "sourceContentBox": [
+          101,
+          202,
+          1436,
+          916
+        ],
+        "sourceSize": [
+          1510,
+          1041
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.04344569288389513,
+          "x": 525,
+          "y": 178,
+          "resizedCrop": [
+            59,
+            32
+          ]
+        },
+        "cleanup": {
+          "method": "remove tiny isolated specks; sclera alpha opening/closing at source size only",
+          "removedSpeckPixels": 6653
+        }
+      },
+      "iris_full_screen_left": {
+        "generatedSource": "generation/eyes/iris_full_screen_left.png",
+        "sourceSha256": "df69d302c1c8c2b01ac6f9f7302a662e7489e82d419e0c0a737a11d7a7d2b953",
+        "cleanedSource": "generation/eyes/iris_full_screen_left_clean.png",
+        "registeredFile": "assets/eyes/iris_full_screen_left.png",
+        "sha256": "3477443f4372fca86d1a0ec8f59a5f7c4107e0aad986bdc6983b27ce715ff540",
+        "bbox": [
+          454,
+          173,
+          482,
+          210
+        ],
+        "sourceContentBox": [
+          226,
+          159,
+          982,
+          1136
+        ],
+        "sourceSize": [
+          1210,
+          1300
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.037037037037037035,
+          "x": 454,
+          "y": 173,
+          "resizedCrop": [
+            28,
+            37
+          ]
+        },
+        "cleanup": {
+          "method": "remove tiny isolated specks; sclera alpha opening/closing at source size only",
+          "removedSpeckPixels": 3908
+        }
+      },
+      "iris_full_screen_right": {
+        "generatedSource": "generation/eyes/iris_full_screen_right.png",
+        "sourceSha256": "75ab2aabb50a69bc619731f4a0f97686fc508df6a07b9f3f70669c4314216aab",
+        "cleanedSource": "generation/eyes/iris_full_screen_right_clean.png",
+        "registeredFile": "assets/eyes/iris_full_screen_right.png",
+        "sha256": "51b9b6eec94325735f2053582dd9df589f6635fae8c006336f233dba177107dc",
+        "bbox": [
+          534,
+          172,
+          563,
+          210
+        ],
+        "sourceContentBox": [
+          215,
+          158,
+          994,
+          1161
+        ],
+        "sourceSize": [
+          1210,
+          1300
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.037227214377406934,
+          "x": 534,
+          "y": 172,
+          "resizedCrop": [
+            29,
+            38
+          ]
+        },
+        "cleanup": {
+          "method": "remove tiny isolated specks; sclera alpha opening/closing at source size only",
+          "removedSpeckPixels": 703
+        }
+      },
+      "brow_screen_left": {
+        "generatedSource": "generation/eyes/brow_screen_left.png",
+        "sourceSha256": "738559605ac469d1b324ed98ef3209265e372809acff8044f66a24ff79c74fdc",
+        "cleanedSource": "generation/eyes/brow_screen_left_clean.png",
+        "registeredFile": "assets/hair_refined/brow_screen_left.png",
+        "sha256": "853adf0038218bf1fb7c14e34cb97750e17c8ce75d52fa14d1ac51cbf31849ac",
+        "bbox": [
+          437,
+          152,
+          476,
+          155
+        ],
+        "sourceContentBox": [
+          248,
+          302,
+          1934,
+          429
+        ],
+        "sourceSize": [
+          2172,
+          724
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.023131672597864767,
+          "x": 437,
+          "y": 152,
+          "resizedCrop": [
+            39,
+            3
+          ]
+        },
+        "cleanup": {
+          "method": "remove tiny isolated specks; sclera alpha opening/closing at source size only",
+          "removedSpeckPixels": 10664
+        }
+      },
+      "brow_screen_right": {
+        "generatedSource": "generation/eyes/brow_screen_right.png",
+        "sourceSha256": "4ba468463211e5d6c7daecc707916bcecaa932e863f70ad18dee083a29ea478f",
+        "cleanedSource": "generation/eyes/brow_screen_right_clean.png",
+        "registeredFile": "assets/hair_refined/brow_screen_right.png",
+        "sha256": "f5f65f53b3fad7a1fa253abb870088e9db6b0f112ac1d3fa92fa7c919cf62a36",
+        "bbox": [
+          531,
+          152,
+          572,
+          155
+        ],
+        "sourceContentBox": [
+          277,
+          292,
+          1906,
+          416
+        ],
+        "sourceSize": [
+          2172,
+          724
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.025168815224063844,
+          "x": 531,
+          "y": 152,
+          "resizedCrop": [
+            41,
+            3
+          ]
+        },
+        "cleanup": {
+          "method": "remove tiny isolated specks; sclera alpha opening/closing at source size only",
+          "removedSpeckPixels": 419
+        }
+      }
+    },
+    "scope": "8 eye components and 2 eyebrows; all other v3 artwork preserved"
+  }
+}

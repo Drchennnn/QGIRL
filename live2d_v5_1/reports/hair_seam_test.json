@@ -1,0 +1,52 @@
+{
+  "regions": {
+    "screen_left_ear": {
+      "box": [
+        400,
+        168,
+        443,
+        238
+      ],
+      "changedPixels": 3005,
+      "currentPartialAlphaPixels": 305
+    },
+    "screen_left_cheek_tip": {
+      "box": [
+        420,
+        215,
+        477,
+        278
+      ],
+      "changedPixels": 2958,
+      "currentPartialAlphaPixels": 349
+    },
+    "screen_right_ear": {
+      "box": [
+        580,
+        168,
+        620,
+        238
+      ],
+      "changedPixels": 2800,
+      "currentPartialAlphaPixels": 187
+    },
+    "screen_right_cheek_tip": {
+      "box": [
+        550,
+        215,
+        598,
+        278
+      ],
+      "changedPixels": 2774,
+      "currentPartialAlphaPixels": 310
+    }
+  },
+  "movableFringeBbox": [
+    470,
+    82,
+    536,
+    189
+  ],
+  "visualReviewRequired": true,
+  "note": "Automated checks prove source/scope/eye safety; edge aesthetics require review of hair_seam_rois.png."
+}

@@ -1,0 +1,117 @@
+{
+  "canvas": [
+    1024,
+    1536
+  ],
+  "layers": [
+    {
+      "name": "hair_back",
+      "file": "assets/hair_refined/hair_back.png",
+      "visible": true
+    },
+    {
+      "name": "ear_screen_left",
+      "file": "assets/hair_refined/ear_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "ear_screen_right",
+      "file": "assets/hair_refined/ear_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "face",
+      "file": "assets/hair_refined/face.png",
+      "visible": true
+    },
+    {
+      "name": "hair_crown",
+      "file": "assets/hair_refined/hair_crown.png",
+      "visible": true
+    },
+    {
+      "name": "hair_side_screen_left",
+      "file": "assets/hair_refined/hair_side_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "hair_side_screen_right",
+      "file": "assets/hair_refined/hair_side_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "hair_streak_screen_left",
+      "file": "assets/hair_refined/hair_streak_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "hair_streak_screen_right",
+      "file": "assets/hair_refined/hair_streak_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "brow_screen_left",
+      "file": "assets/hair_refined/brow_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "brow_screen_right",
+      "file": "assets/hair_refined/brow_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "nose",
+      "file": "assets/hair_refined/nose.png",
+      "visible": true
+    },
+    {
+      "name": "mouth",
+      "file": "assets/hair_refined/mouth.png",
+      "visible": true
+    },
+    {
+      "name": "hair_fringe_center",
+      "file": "assets/hair_refined/hair_fringe_center.png",
+      "visible": true
+    },
+    {
+      "name": "clip_screen_left",
+      "file": "assets/hair_refined/clip_screen_left.png",
+      "visible": true
+    }
+  ],
+  "eyeSlot": {
+    "after": "brow_screen_right",
+    "before": "nose",
+    "expectedOrder": [
+      "eyewhite_screen_left",
+      "eyewhite_screen_right",
+      "iris_screen_left",
+      "iris_screen_right",
+      "upper_lid_screen_left",
+      "upper_lid_screen_right",
+      "lower_lid_screen_left",
+      "lower_lid_screen_right"
+    ]
+  },
+  "method": "Remove skin/eye contamination; reconstruct mixed dark-hair edges as alpha over flat face backing.",
+  "validation": {
+    "neutralChangedPixels": 636,
+    "neutralMaxChannelDifference": 240,
+    "fixedDarkHairPixelsInsideFringeSweep": 5602,
+    "rootPinnedFringeTests": [
+      {
+        "fringeX": -3,
+        "transparentPixelsInInspectionRegion": 0
+      },
+      {
+        "fringeX": 0,
+        "transparentPixelsInInspectionRegion": 0
+      },
+      {
+        "fringeX": 3,
+        "transparentPixelsInInspectionRegion": 0
+      }
+    ]
+  }
+}

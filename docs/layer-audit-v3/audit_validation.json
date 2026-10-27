@@ -1,0 +1,19 @@
+{
+  "displayLayersReviewed": 33,
+  "bodyLayersMatchV1": 14,
+  "sourceLayerHashesUnchanged": 33,
+  "torsoSmallComponents8ConnectivityAlphaGT32": [
+    {
+      "pixels": 30,
+      "bbox": [
+        238,
+        796,
+        241,
+        811
+      ]
+    }
+  ],
+  "imageGenerationCallsThisAudit": 0,
+  "productionFilesEdited": false,
+  "scope": "Analysis artifacts only"
+}

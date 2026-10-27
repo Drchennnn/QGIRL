@@ -1,0 +1,162 @@
+{
+  "layers": 33,
+  "canvas": [
+    1024,
+    1536
+  ],
+  "neutralChangedPixelsVsV1": 57658,
+  "staticVsRuntimeNeutralChangedPixels": 0,
+  "gazeClippingChecks": [
+    {
+      "side": "screen_left",
+      "x": -4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 0,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": -4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 0,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": -4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 0,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": -4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 0,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": -4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 0,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": -4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 0,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    }
+  ],
+  "cameraTracking": false,
+  "cubismRig": false,
+  "irisMethod": "Generated-only independent eyelids, complete sclera, full iris and eyebrows; true-alpha clipping.",
+  "hairMethod": {
+    "file": "generation/hair_official_cutout.png",
+    "sha256": "c3008b76d36981d6b789e589ca07ac377151dae10f94b81e3f4b62aa10a19df0",
+    "method": "Official built-in image generation; semantic transparent hair isolation",
+    "model": "not exposed by built-in tool",
+    "registration": {
+      "sourceCrop": [
+        365,
+        15,
+        655,
+        315
+      ],
+      "size": [
+        290,
+        300
+      ]
+    }
+  },
+  "faceGroup": {
+    "generationCalls": 7,
+    "successfulOutputs": 6,
+    "pythonTests": 24,
+    "pythonAllPass": true,
+    "unchangedLayersVsV4": 27,
+    "changedLayersVsV4": [
+      "face",
+      "ear_screen_left",
+      "ear_screen_right",
+      "nose",
+      "mouth",
+      "neck_bridge"
+    ],
+    "inspectorComponents": 6,
+    "browserPreviewPassed": true,
+    "gazePoses": 11,
+    "visibleChangesOutsideEyeMask": 0,
+    "psdRoundtripChangedPixels": 0,
+    "multiAngleRig": false,
+    "model": "not exposed by built-in image tool"
+  }
+}

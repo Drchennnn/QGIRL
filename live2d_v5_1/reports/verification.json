@@ -1,0 +1,144 @@
+{
+  "layers": 33,
+  "canvas": [
+    1024,
+    1536
+  ],
+  "neutralChangedPixelsVsV1": 58649,
+  "staticVsRuntimeNeutralChangedPixels": 0,
+  "gazeClippingChecks": [
+    {
+      "side": "screen_left",
+      "x": -4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 0,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": -4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 0,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": -4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 0,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": -4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 0,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": -4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 0,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": -4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 0,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    }
+  ],
+  "cameraTracking": false,
+  "cubismRig": false,
+  "irisMethod": "Generated-only independent eyelids, complete sclera, full iris and eyebrows; true-alpha clipping.",
+  "hairMethod": {
+    "file": "generation/hair_fix/hair_ear_cheek_repair.png",
+    "sha256": "e53d6aa60cb6d675ff4de98101b29f96f4221074894f947596166af08d8b7232",
+    "method": "Official built-in image generation; ear openings and cheek tips repaired in full-resolution alpha artwork",
+    "model": "not exposed by built-in tool",
+    "legacyEarHoleMaskApplied": false,
+    "buildScript": "scripts/refine_hair_fix.py",
+    "registration": {
+      "fullSourceSize": [
+        1232,
+        1277
+      ],
+      "targetSize": [
+        290,
+        300
+      ],
+      "position": [
+        365,
+        15
+      ]
+    }
+  }
+}

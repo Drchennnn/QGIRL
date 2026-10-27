@@ -1,0 +1,49 @@
+{
+  "source": "/Users/Link/code/Character/live2d_v1/assets/front_master_clean.png",
+  "canvas": [
+    1024,
+    1536
+  ],
+  "bodyVisiblePixels": 260425,
+  "semanticVisiblePixels": {
+    "neck": 3360,
+    "screen_left_hand": 5334,
+    "screen_right_hand": 5330,
+    "screen_left_forearm": 9502,
+    "screen_right_forearm": 9504,
+    "screen_left_upper_arm": 18541,
+    "screen_right_upper_arm": 17577,
+    "screen_left_foot": 7537,
+    "screen_right_foot": 7518,
+    "screen_left_lower_leg": 23277,
+    "screen_right_lower_leg": 23207,
+    "screen_left_thigh": 29729,
+    "screen_right_thigh": 29597,
+    "torso_pelvis": 70412
+  },
+  "programmaticConcealedOverlapPixels": {
+    "screen_left_hand": 388,
+    "screen_right_hand": 390,
+    "screen_left_forearm": 669,
+    "screen_right_forearm": 669,
+    "screen_left_upper_arm": 3002,
+    "screen_right_upper_arm": 2860,
+    "screen_left_foot": 487,
+    "screen_right_foot": 480,
+    "screen_left_lower_leg": 879,
+    "screen_right_lower_leg": 889,
+    "screen_left_thigh": 1687,
+    "screen_right_thigh": 1632,
+    "neck": 1351
+  },
+  "validation": {
+    "visiblePartitionMissedPixels": 0,
+    "neutralCompositeChangedPixels": 0,
+    "neutralCompositeMaxChannelDifference": 0,
+    "allLayersFullCanvasRGBA": true
+  },
+  "limitations": [
+    "Overlap is copied from currently visible source pixels; it supports small joint rotations only.",
+    "No AI inpainting, anatomical repainting, mesh, deformers, or Cubism binding is included."
+  ]
+}

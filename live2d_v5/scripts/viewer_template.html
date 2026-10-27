@@ -1,0 +1,60 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>角色精修 v5 · 视线遮挡预览</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#171c25;color:#edf2fa;font:15px system-ui;display:flex}
+aside{width:320px;padding:24px;height:100vh;overflow:auto}main{flex:1;background:#b9c0c8;display:grid;place-items:center;height:100vh;overflow:hidden}
+canvas{max-height:96vh;max-width:100%;object-fit:contain}button,select{font:inherit;padding:8px;margin:5px 0;border-radius:6px;border:0}
+label{display:block;margin:16px 0}input[type=range]{width:210px}small{color:#aab5c5;line-height:1.6}h2{font-size:22px}
+#status{color:#87dec7}details label{font-size:12px;margin:4px}
+</style>
+<aside>
+  <h2>视线遮挡与发片精修 v5</h2>
+  <p id="status">正在载入图层</p>
+  <small>这是鼠标视线预览，不读取摄像头。虹膜位于眼白上方、固定眼睑和睫毛下方，并由内收眼眶遮罩裁切。</small>
+  <label><input id="follow" type="checkbox"> 鼠标跟随</label>
+  <label><input id="linked" type="checkbox" checked> 双眼联动</label>
+  <select id="eye"><option value="screen_left">屏幕左眼</option><option value="screen_right">屏幕右眼</option></select>
+  <label>水平 <input id="gx" type="range" min="-1" max="1" step=".01" value="0"><output id="gxv">0</output></label>
+  <label>垂直 <input id="gy" type="range" min="-1" max="1" step=".01" value="0"><output id="gyv">0</output></label>
+  <label>刘海摆动 <input id="hair" type="range" min="-3" max="3" step=".1" value="0"></label>
+  <button id="reset">复位</button> <button id="zoom">全身 / 头部</button>
+  <p><small>范围：水平 ±4px、垂直 ±2px。刘海根部固定，下端最大 ±3px。参数是预览数据，尚未写入 Cubism。</small></p>
+  <details><summary>图层开关</summary><div id="rows"></div></details>
+</aside>
+<main><canvas id="canvas" width="600" height="650"></canvas></main>
+<script>
+const data=__DATA__, $=id=>document.getElementById(id), canvas=$('canvas'),ctx=canvas.getContext('2d');
+const buffer=document.createElement('canvas');buffer.width=1024;buffer.height=1536;const b=buffer.getContext('2d');
+const temp=document.createElement('canvas');temp.width=1024;temp.height=1536;const t=temp.getContext('2d');
+const state={screen_left:{x:0,y:0},screen_right:{x:0,y:0}};let head=true,ready=false,layers=[];
+const load=src=>new Promise((resolve,reject)=>{let im=new Image();im.onload=()=>resolve(im);im.onerror=reject;im.src=src});
+function draw(){
+  if(!ready)return;b.clearRect(0,0,1024,1536);
+  for(const l of layers){
+    if(!l.on)continue;
+    if(l.name.startsWith('iris_')){
+      const q=state[l.name.slice(5)];t.clearRect(0,0,1024,1536);t.globalCompositeOperation='source-over';
+      t.drawImage(l.im,q.x*4,q.y*2);t.globalCompositeOperation='destination-in';t.drawImage(l.mask,0,0);
+      t.globalCompositeOperation='source-over';b.drawImage(temp,0,0);
+    }else if(l.name==='hair_fringe_center'&&+$('hair').value!==0){
+      for(let y=0;y<310;y++){let f=Math.max(0,Math.min(1,(y-132)/44));f=f*f*(3-2*f);b.drawImage(l.im,0,y,1024,1,+$('hair').value*f,y,1024,1)}
+    }else b.drawImage(l.im,0,0);
+  }
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  if(head)ctx.drawImage(buffer,365,15,290,315,0,0,600,650);else ctx.drawImage(buffer,0,0,1024,1536,83,0,434,650);
+}
+function syncControls(q){$('gx').value=q.x;$('gy').value=q.y;$('gxv').value=q.x.toFixed(2);$('gyv').value=q.y.toFixed(2)}
+function update(x,y){const targets=$('linked').checked?Object.keys(state):[$('eye').value];for(const side of targets)state[side]={x,y};syncControls({x,y});draw()}
+for(const axis of ['gx','gy'])$(axis).oninput=()=>update(+$('gx').value,+$('gy').value);$('hair').oninput=draw;
+$('eye').onchange=()=>syncControls(state[$('eye').value]);
+canvas.onpointermove=e=>{if(!$('follow').checked)return;const r=canvas.getBoundingClientRect();update(Math.max(-1,Math.min(1,(e.clientX-r.left)/r.width*2-1)),Math.max(-1,Math.min(1,(e.clientY-r.top)/r.height*2-1)))};
+canvas.onpointerleave=()=>{if($('follow').checked)update(0,0)};
+$('reset').onclick=()=>{$('follow').checked=false;$('linked').checked=true;$('hair').value=0;for(const l of layers){l.on=true;l.box.checked=true}update(0,0)};
+$('zoom').onclick=()=>{head=!head;draw()};
+Promise.all(data.map(async d=>({...d,im:await load(d.src),mask:d.mask?await load(d.mask):null,on:true}))).then(ls=>{
+  layers=ls;for(const l of layers){let row=document.createElement('label'),box=document.createElement('input');box.type='checkbox';box.checked=true;box.onchange=()=>{l.on=box.checked;draw()};l.box=box;row.append(box,document.createTextNode(l.name));$('rows').append(row)}
+  ready=true;$('status').textContent=layers.length+' 层已加载 · 可交互';draw();window.__previewReady=true;
+}).catch(e=>{$('status').textContent='加载失败：'+e.message});
+window.getPreviewState=()=>({ready,eyes:JSON.parse(JSON.stringify(state)),layerCount:layers.length,head});
+</script>

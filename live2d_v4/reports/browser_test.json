@@ -1,0 +1,103 @@
+{
+  "initial": {
+    "ready": true,
+    "eyes": {
+      "screen_left": {
+        "x": 0,
+        "y": 0
+      },
+      "screen_right": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "layerCount": 33,
+    "head": true
+  },
+  "follow": {
+    "ready": true,
+    "eyes": {
+      "screen_left": {
+        "x": 0.6000000000000001,
+        "y": 0.19999999999999996
+      },
+      "screen_right": {
+        "x": 0.6000000000000001,
+        "y": 0.19999999999999996
+      }
+    },
+    "layerCount": 33,
+    "head": true
+  },
+  "independent": {
+    "ready": true,
+    "eyes": {
+      "screen_left": {
+        "x": -0.75,
+        "y": 0.35
+      },
+      "screen_right": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "layerCount": 33,
+    "head": true
+  },
+  "independentRight": {
+    "ready": true,
+    "eyes": {
+      "screen_left": {
+        "x": -0.75,
+        "y": 0.35
+      },
+      "screen_right": {
+        "x": 0.5,
+        "y": -0.4
+      }
+    },
+    "layerCount": 33,
+    "head": true
+  },
+  "leftOutputs": {
+    "x": "-0.75",
+    "y": "0.35"
+  },
+  "rightOutputs": {
+    "x": "0.00",
+    "y": "0.00"
+  },
+  "reset": {
+    "ready": true,
+    "eyes": {
+      "screen_left": {
+        "x": 0,
+        "y": 0
+      },
+      "screen_right": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "layerCount": 33,
+    "head": true
+  },
+  "zoom": {
+    "head": "0b102c41e0238254324397253e7625c80dadf90a4746cb0441fb12135b4c8dc6",
+    "fullBody": "527be7fe2f1522a511b834c84713417b9a51afed0acb095519eeca2a7e72afde",
+    "changed": true
+  },
+  "hair": {
+    "neutral": "0b102c41e0238254324397253e7625c80dadf90a4746cb0441fb12135b4c8dc6",
+    "plus3": "18525affa2f0537ef2b657d14ce226ca312bdd1e4f499eff0f3125bc4ba310f7",
+    "changed": true
+  },
+  "layerToggle": {
+    "visible": "0b102c41e0238254324397253e7625c80dadf90a4746cb0441fb12135b4c8dc6",
+    "hidden": "6dad99669dbcc8d9fe04d6a0dfbcd16e5e90a0bfbf1dfe9ed0a1282b917bc593",
+    "changed": true
+  },
+  "resetRestoresPixels": true,
+  "errors": [],
+  "passed": true
+}

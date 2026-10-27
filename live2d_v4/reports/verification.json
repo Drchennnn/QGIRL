@@ -1,0 +1,427 @@
+{
+  "layers": 33,
+  "canvas": [
+    1024,
+    1536
+  ],
+  "neutralChangedPixelsVsV1": 50889,
+  "staticVsRuntimeNeutralChangedPixels": 0,
+  "gazeClippingChecks": [
+    {
+      "side": "screen_left",
+      "x": -4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 0,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": -4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 0,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": -4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 0,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": -4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 0,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": -4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 0,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": -4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 0,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    }
+  ],
+  "cameraTracking": false,
+  "cubismRig": false,
+  "irisMethod": "Generated-only independent eyelids, complete sclera, full iris and eyebrows; true-alpha clipping.",
+  "hairMethod": {
+    "file": "generation/hair_official_cutout.png",
+    "sha256": "c3008b76d36981d6b789e589ca07ac377151dae10f94b81e3f4b62aa10a19df0",
+    "method": "Official built-in image generation; semantic transparent hair isolation",
+    "model": "not exposed by built-in tool",
+    "registration": {
+      "sourceCrop": [
+        365,
+        15,
+        655,
+        315
+      ],
+      "size": [
+        290,
+        300
+      ]
+    }
+  },
+  "generationCalls": 14,
+  "selectedArtworkComponents": 10,
+  "artworkSourcePolicy": "generated-only",
+  "psdReadback": {
+    "psdReadbackAvailable": true,
+    "psdCanvas": [
+      1024,
+      1536
+    ],
+    "layerCount": 33,
+    "visibleLayerCount": 33,
+    "hiddenLayerCount": 0,
+    "decodedChannelPixelChanges": 0,
+    "layerNamesAndOrderMatch": true,
+    "layerVisibilityMatches": true
+  },
+  "browserGazeChecks": {
+    "maskAlphaContract": [
+      {
+        "name": "iris_screen_left",
+        "backgroundAlpha": 0
+      },
+      {
+        "name": "iris_screen_right",
+        "backgroundAlpha": 0
+      }
+    ],
+    "visibleColourTolerance": 1.1,
+    "checks": [
+      {
+        "x": -4,
+        "y": -2,
+        "outsideChanges": 0,
+        "insideChanges": 6090,
+        "quantizationOnly": 854,
+        "eyes": {
+          "screen_left": {
+            "x": -1,
+            "y": -1
+          },
+          "screen_right": {
+            "x": -1,
+            "y": -1
+          }
+        },
+        "examples": []
+      },
+      {
+        "x": 0,
+        "y": -2,
+        "outsideChanges": 0,
+        "insideChanges": 5689,
+        "quantizationOnly": 854,
+        "eyes": {
+          "screen_left": {
+            "x": 0,
+            "y": -1
+          },
+          "screen_right": {
+            "x": 0,
+            "y": -1
+          }
+        },
+        "examples": []
+      },
+      {
+        "x": 4,
+        "y": -2,
+        "outsideChanges": 0,
+        "insideChanges": 6253,
+        "quantizationOnly": 854,
+        "eyes": {
+          "screen_left": {
+            "x": 1,
+            "y": -1
+          },
+          "screen_right": {
+            "x": 1,
+            "y": -1
+          }
+        },
+        "examples": []
+      },
+      {
+        "x": -4,
+        "y": 0,
+        "outsideChanges": 0,
+        "insideChanges": 6059,
+        "quantizationOnly": 854,
+        "eyes": {
+          "screen_left": {
+            "x": -1,
+            "y": 0
+          },
+          "screen_right": {
+            "x": -1,
+            "y": 0
+          }
+        },
+        "examples": []
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "outsideChanges": 0,
+        "insideChanges": 0,
+        "quantizationOnly": 854,
+        "eyes": {
+          "screen_left": {
+            "x": 0,
+            "y": 0
+          },
+          "screen_right": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "examples": []
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "outsideChanges": 0,
+        "insideChanges": 6218,
+        "quantizationOnly": 854,
+        "eyes": {
+          "screen_left": {
+            "x": 1,
+            "y": 0
+          },
+          "screen_right": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        "examples": []
+      },
+      {
+        "x": -4,
+        "y": 2,
+        "outsideChanges": 0,
+        "insideChanges": 6098,
+        "quantizationOnly": 854,
+        "eyes": {
+          "screen_left": {
+            "x": -1,
+            "y": 1
+          },
+          "screen_right": {
+            "x": -1,
+            "y": 1
+          }
+        },
+        "examples": []
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "outsideChanges": 0,
+        "insideChanges": 5664,
+        "quantizationOnly": 854,
+        "eyes": {
+          "screen_left": {
+            "x": 0,
+            "y": 1
+          },
+          "screen_right": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "examples": []
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "outsideChanges": 0,
+        "insideChanges": 6266,
+        "quantizationOnly": 854,
+        "eyes": {
+          "screen_left": {
+            "x": 1,
+            "y": 1
+          },
+          "screen_right": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        "examples": []
+      },
+      {
+        "x": -1.52,
+        "y": 0.74,
+        "outsideChanges": 0,
+        "insideChanges": 5795,
+        "quantizationOnly": 854,
+        "eyes": {
+          "screen_left": {
+            "x": -0.38,
+            "y": 0.37
+          },
+          "screen_right": {
+            "x": -0.38,
+            "y": 0.37
+          }
+        },
+        "examples": []
+      },
+      {
+        "x": 2.24,
+        "y": -1.26,
+        "outsideChanges": 0,
+        "insideChanges": 6091,
+        "quantizationOnly": 854,
+        "eyes": {
+          "screen_left": {
+            "x": 0.56,
+            "y": -0.63
+          },
+          "screen_right": {
+            "x": 0.56,
+            "y": -0.63
+          }
+        },
+        "examples": []
+      }
+    ],
+    "independent": [
+      {
+        "side": "screen_left",
+        "ownChanges": 3011,
+        "otherChanges": 0,
+        "outsideChanges": 0,
+        "quantizationOnly": 854,
+        "eyes": {
+          "screen_left": {
+            "x": 0.75,
+            "y": -0.5
+          },
+          "screen_right": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      },
+      {
+        "side": "screen_right",
+        "ownChanges": 2818,
+        "otherChanges": 0,
+        "outsideChanges": 0,
+        "quantizationOnly": 854,
+        "eyes": {
+          "screen_left": {
+            "x": 0,
+            "y": 0
+          },
+          "screen_right": {
+            "x": -0.65,
+            "y": 0.6
+          }
+        }
+      }
+    ],
+    "reset": {
+      "visibleChanges": 0,
+      "quantizationOnly": 854,
+      "eyes": {
+        "screen_left": {
+          "x": 0,
+          "y": 0
+        },
+        "screen_right": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    "passed": true
+  },
+  "browserInteractionsPassed": true,
+  "pythonTests": {
+    "artwork": 5,
+    "occlusion": 5,
+    "delivery": 9,
+    "totalPassed": 19
+  }
+}

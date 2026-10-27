@@ -1,0 +1,93 @@
+{
+  "canvas": [
+    1024,
+    1536
+  ],
+  "layers": [
+    {
+      "name": "hair_back",
+      "file": "assets/hair_refined/hair_back.png",
+      "visible": true
+    },
+    {
+      "name": "neck_bridge",
+      "file": "assets/hair_refined/neck_bridge.png",
+      "visible": true
+    },
+    {
+      "name": "face",
+      "file": "assets/hair_refined/face.png",
+      "visible": true
+    },
+    {
+      "name": "ear_screen_left",
+      "file": "assets/hair_refined/ear_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "ear_screen_right",
+      "file": "assets/hair_refined/ear_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "brow_screen_left",
+      "file": "assets/hair_refined/brow_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "brow_screen_right",
+      "file": "assets/hair_refined/brow_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "nose",
+      "file": "assets/hair_refined/nose.png",
+      "visible": true
+    },
+    {
+      "name": "mouth",
+      "file": "assets/hair_refined/mouth.png",
+      "visible": true
+    },
+    {
+      "name": "hair_front_fixed",
+      "file": "assets/hair_refined/hair_front_fixed.png",
+      "visible": true
+    },
+    {
+      "name": "hair_fringe_center",
+      "file": "assets/hair_refined/hair_fringe_center.png",
+      "visible": true
+    }
+  ],
+  "eyeSlot": {
+    "after": "ear_screen_right",
+    "before": "brow_screen_left"
+  },
+  "motion": {
+    "rootFixedUntilY": 132,
+    "fullMovementFromY": 176,
+    "rangePixels": [
+      -3,
+      3
+    ]
+  },
+  "source": {
+    "file": "generation/hair_official_cutout.png",
+    "sha256": "c3008b76d36981d6b789e589ca07ac377151dae10f94b81e3f4b62aa10a19df0",
+    "method": "Official built-in image generation; semantic transparent hair isolation",
+    "model": "not exposed by built-in tool",
+    "registration": {
+      "sourceCrop": [
+        365,
+        15,
+        655,
+        315
+      ],
+      "size": [
+        290,
+        300
+      ]
+    }
+  }
+}

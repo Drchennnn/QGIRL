@@ -1,0 +1,10 @@
+{
+  "sourceCanvas": [
+    1024,
+    1536
+  ],
+  "removedNonzeroAlphaPixels": 31906,
+  "retainedRGBChanges": 0,
+  "opaqueCorePixels": 302389,
+  "method": "Largest connected alpha >=245 region; retain two-pixel edge with alpha >30; normalize opaque interior alpha; RGB unchanged inside retained subject."
+}

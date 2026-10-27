@@ -1,0 +1,248 @@
+{
+  "canvas": [
+    1024,
+    1536
+  ],
+  "coordinateConvention": "screen_left/right = viewer side",
+  "artwork": {
+    "sourcePolicy": "generated-only",
+    "generationCalls": 7,
+    "successfulOutputs": 6,
+    "components": {
+      "face": {
+        "generatedSource": "generation/face/face.png",
+        "sourceSha256": "e4d4a184db9283dd07ebb582c502bb0007600350fd21c3030f067d30e242f4c2",
+        "cleanedSource": "generation/face/face_clean.png",
+        "registeredFile": "assets/hair_refined/face.png",
+        "sha256": "7c32c291feabaaa94b98587d72a69504b201aa7621eb5420ea6c58e8935aec2d",
+        "bbox": [
+          415,
+          33,
+          604,
+          272
+        ],
+        "sourceContentBox": [
+          146,
+          79,
+          1046,
+          1218
+        ],
+        "sourceSize": [
+          1197,
+          1314
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.20777777777777778,
+          "x": 415,
+          "y": 33,
+          "resizedCrop": [
+            189,
+            239
+          ]
+        },
+        "cleanup": {
+          "method": "isolated specks; source-size 3px opening/2px closing for filled parts; no RGB repaint",
+          "removedSpeckPixels": 1266
+        },
+        "overlapBlend": null
+      },
+      "ear_screen_left": {
+        "generatedSource": "generation/face/ear_screen_left.png",
+        "sourceSha256": "611999ce9cc6cb7d1487fc3597d4cb8fd471581cbdcb3cb2710e5ab90b8778b9",
+        "cleanedSource": "generation/face/ear_screen_left_clean.png",
+        "registeredFile": "assets/hair_refined/ear_screen_left.png",
+        "sha256": "1d8f424a915a34a9a37fc5eebf6f562d2f9e1e99df92c0db9300cca2b3662a08",
+        "bbox": [
+          408,
+          179,
+          432,
+          225
+        ],
+        "sourceContentBox": [
+          181,
+          88,
+          844,
+          1361
+        ],
+        "sourceSize": [
+          1070,
+          1470
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.03613511390416339,
+          "x": 408,
+          "y": 179,
+          "resizedCrop": [
+            24,
+            46
+          ]
+        },
+        "cleanup": {
+          "method": "isolated specks; source-size 3px opening/2px closing for filled parts; no RGB repaint",
+          "removedSpeckPixels": 18305
+        },
+        "overlapBlend": null
+      },
+      "ear_screen_right": {
+        "generatedSource": "generation/face/ear_screen_right.png",
+        "sourceSha256": "38f591fdf0791963a8b1b1223a9452717edc789c1991a9513bd2ec95dae8d77e",
+        "cleanedSource": "generation/face/ear_screen_right_clean.png",
+        "registeredFile": "assets/hair_refined/ear_screen_right.png",
+        "sha256": "8a5db1be748ed986770be3a365c57b03ffc5faed48ed2f8a6fe639514f7cc873",
+        "bbox": [
+          586,
+          179,
+          612,
+          227
+        ],
+        "sourceContentBox": [
+          381,
+          107,
+          917,
+          1110
+        ],
+        "sourceSize": [
+          1233,
+          1276
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.04685942173479561,
+          "x": 586,
+          "y": 179,
+          "resizedCrop": [
+            26,
+            48
+          ]
+        },
+        "cleanup": {
+          "method": "isolated specks; source-size 3px opening/2px closing for filled parts; no RGB repaint",
+          "removedSpeckPixels": 526
+        },
+        "overlapBlend": null
+      },
+      "nose": {
+        "generatedSource": "generation/face/nose.png",
+        "sourceSha256": "d6f523a8f0f5fcc4225f4a9b21b7351badc9b8a1304246d3af4e0a44ff8a2b19",
+        "cleanedSource": "generation/face/nose_clean.png",
+        "registeredFile": "assets/hair_refined/nose.png",
+        "sha256": "a11a2779ac659d496519ce9c8fe141301e3017a17761e10727d1fcb8ade29496",
+        "bbox": [
+          508,
+          214,
+          510,
+          221
+        ],
+        "sourceContentBox": [
+          705,
+          269,
+          832,
+          704
+        ],
+        "sourceSize": [
+          1536,
+          1024
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.016091954022988506,
+          "x": 508,
+          "y": 214,
+          "resizedCrop": [
+            2,
+            7
+          ]
+        },
+        "cleanup": {
+          "method": "isolated specks; source-size 3px opening/2px closing for filled parts; no RGB repaint",
+          "removedSpeckPixels": 6033
+        },
+        "overlapBlend": null
+      },
+      "mouth": {
+        "generatedSource": "generation/face/mouth.png",
+        "sourceSha256": "a5f203c225c9b2b91dbf0dd97f8fe5389a3272256a5e623f93c0aaf516e56257",
+        "cleanedSource": "generation/face/mouth_clean.png",
+        "registeredFile": "assets/hair_refined/mouth.png",
+        "sha256": "51d7afedea67057256bd9749425e2b198feece5a95c3ddf0ced3aa176c46c147",
+        "bbox": [
+          496,
+          234,
+          524,
+          237
+        ],
+        "sourceContentBox": [
+          483,
+          326,
+          1620,
+          455
+        ],
+        "sourceSize": [
+          2103,
+          748
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.024626209322779244,
+          "x": 496,
+          "y": 234,
+          "resizedCrop": [
+            28,
+            3
+          ]
+        },
+        "cleanup": {
+          "method": "isolated specks; source-size 3px opening/2px closing for filled parts; no RGB repaint",
+          "removedSpeckPixels": 457
+        },
+        "overlapBlend": null
+      },
+      "neck_bridge": {
+        "generatedSource": "generation/face/neck_bridge.png",
+        "sourceSha256": "c36df18040f8db54861ead24bdd62f8051dd8305ef32365aa2ac667d4d022489",
+        "cleanedSource": "generation/face/neck_bridge_clean.png",
+        "registeredFile": "assets/hair_refined/neck_bridge.png",
+        "sha256": "76ac959fdf88c641260e2484d8785fe76e7edb00bdf58017d95812fce5ca3cf0",
+        "bbox": [
+          470,
+          244,
+          550,
+          303
+        ],
+        "sourceContentBox": [
+          354,
+          444,
+          976,
+          983
+        ],
+        "sourceSize": [
+          1330,
+          1182
+        ],
+        "transform": {
+          "method": "uniform scale and translation",
+          "scale": 0.12540192926045016,
+          "x": 470,
+          "y": 244,
+          "resizedCrop": [
+            80,
+            69
+          ]
+        },
+        "cleanup": {
+          "method": "isolated specks; source-size 3px opening/2px closing for filled parts; no RGB repaint",
+          "removedSpeckPixels": 376
+        },
+        "overlapBlend": {
+          "method": "vertical alpha overlap blend into inherited white neck",
+          "opaqueUntilY": 294,
+          "transparentFromY": 303
+        }
+      }
+    }
+  },
+  "stage": "front face components; hidden-area artwork prepared; no angle keyforms or Cubism binding",
+  "symmetryPolicy": "For future symmetric structures generate one source, mirror and register; retain existing two generated ears in this group."
+}

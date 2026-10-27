@@ -1,0 +1,99 @@
+{
+  "canvas": [
+    1024,
+    1536
+  ],
+  "layers": [
+    {
+      "name": "hair_back",
+      "file": "assets/hair_refined/hair_back.png",
+      "visible": true
+    },
+    {
+      "name": "neck_bridge",
+      "file": "assets/hair_refined/neck_bridge.png",
+      "visible": true
+    },
+    {
+      "name": "ear_screen_left",
+      "file": "assets/hair_refined/ear_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "ear_screen_right",
+      "file": "assets/hair_refined/ear_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "face",
+      "file": "assets/hair_refined/face.png",
+      "visible": true
+    },
+    {
+      "name": "brow_screen_left",
+      "file": "assets/hair_refined/brow_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "brow_screen_right",
+      "file": "assets/hair_refined/brow_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "nose",
+      "file": "assets/hair_refined/nose.png",
+      "visible": true
+    },
+    {
+      "name": "mouth",
+      "file": "assets/hair_refined/mouth.png",
+      "visible": true
+    },
+    {
+      "name": "hair_front_fixed",
+      "file": "assets/hair_refined/hair_front_fixed.png",
+      "visible": true
+    },
+    {
+      "name": "hair_fringe_center",
+      "file": "assets/hair_refined/hair_fringe_center.png",
+      "visible": true
+    }
+  ],
+  "eyeSlot": {
+    "after": "face",
+    "before": "brow_screen_left"
+  },
+  "motion": {
+    "rootFixedUntilY": 132,
+    "fullMovementFromY": 176,
+    "rangePixels": [
+      -3,
+      3
+    ]
+  },
+  "source": {
+    "file": "generation/hair_fix/hair_ear_cheek_repair.png",
+    "sha256": "e53d6aa60cb6d675ff4de98101b29f96f4221074894f947596166af08d8b7232",
+    "method": "Official built-in image generation; ear openings and cheek tips repaired in full-resolution alpha artwork",
+    "model": "not exposed by built-in tool",
+    "legacyEarHoleMaskApplied": false,
+    "buildScript": "scripts/refine_hair_fix.py",
+    "registration": {
+      "fullSourceSize": [
+        1232,
+        1277
+      ],
+      "targetSize": [
+        290,
+        300
+      ],
+      "position": [
+        365,
+        15
+      ]
+    }
+  },
+  "faceSource": "face_manifest.json",
+  "repairSource": "hair_fix_manifest.json"
+}

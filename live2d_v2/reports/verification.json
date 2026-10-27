@@ -1,0 +1,122 @@
+{
+  "layers": 35,
+  "canvas": [
+    1024,
+    1536
+  ],
+  "neutralChangedPixelsVsV1": 2443,
+  "staticVsRuntimeNeutralChangedPixels": 0,
+  "gazeClippingChecks": [
+    {
+      "side": "screen_left",
+      "x": -4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 0,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": -4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 0,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": -4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 0,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_left",
+      "x": 4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": -4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 0,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 4,
+      "y": -2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": -4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 0,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 4,
+      "y": 0,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": -4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 0,
+      "y": 2,
+      "outsideMaskPixels": 0
+    },
+    {
+      "side": "screen_right",
+      "x": 4,
+      "y": 2,
+      "outsideMaskPixels": 0
+    }
+  ],
+  "cameraTracking": false,
+  "cubismRig": false,
+  "irisMethod": "Local supersampled redraw preserving dark-blue iris and cyan U motif; original image retained in v1."
+}

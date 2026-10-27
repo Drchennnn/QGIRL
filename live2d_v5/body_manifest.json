@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "canvas": [
+    1024,
+    1536
+  ],
+  "coordinateConvention": "screen_left/screen_right are viewer sides",
+  "headBodyBoundary": {
+    "bodyMask": "source alpha > 0 AND (y >= 300 OR (270 <= y < 300 AND 482 <= x < 538))",
+    "headExclusion": "head builder must exclude exactly the bodyMask above",
+    "pixelCoordinates": "zero-based; x/y intervals are half-open"
+  },
+  "painterOrder": "bottom-to-top",
+  "layers": [
+    {
+      "name": "neck",
+      "file": "assets/body/neck.png",
+      "visible": true
+    },
+    {
+      "name": "screen_left_hand",
+      "file": "assets/body/screen_left_hand.png",
+      "visible": true
+    },
+    {
+      "name": "screen_right_hand",
+      "file": "assets/body/screen_right_hand.png",
+      "visible": true
+    },
+    {
+      "name": "screen_left_forearm",
+      "file": "assets/body/screen_left_forearm.png",
+      "visible": true
+    },
+    {
+      "name": "screen_right_forearm",
+      "file": "assets/body/screen_right_forearm.png",
+      "visible": true
+    },
+    {
+      "name": "screen_left_upper_arm",
+      "file": "assets/body/screen_left_upper_arm.png",
+      "visible": true
+    },
+    {
+      "name": "screen_right_upper_arm",
+      "file": "assets/body/screen_right_upper_arm.png",
+      "visible": true
+    },
+    {
+      "name": "screen_left_foot",
+      "file": "assets/body/screen_left_foot.png",
+      "visible": true
+    },
+    {
+      "name": "screen_right_foot",
+      "file": "assets/body/screen_right_foot.png",
+      "visible": true
+    },
+    {
+      "name": "screen_left_lower_leg",
+      "file": "assets/body/screen_left_lower_leg.png",
+      "visible": true
+    },
+    {
+      "name": "screen_right_lower_leg",
+      "file": "assets/body/screen_right_lower_leg.png",
+      "visible": true
+    },
+    {
+      "name": "screen_left_thigh",
+      "file": "assets/body/screen_left_thigh.png",
+      "visible": true
+    },
+    {
+      "name": "screen_right_thigh",
+      "file": "assets/body/screen_right_thigh.png",
+      "visible": true
+    },
+    {
+      "name": "torso_pelvis",
+      "file": "assets/body/torso_pelvis.png",
+      "visible": true
+    }
+  ],
+  "overlapPolicy": "Child layers copy fully opaque source pixels up to 12-14 px into the later-painted parent; these are programmatic concealed fills, not artist-reviewed new artwork."
+}

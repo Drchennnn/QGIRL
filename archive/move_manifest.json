@@ -1,0 +1,134 @@
+{
+  "maintenance_date": "2026-10-27",
+  "git": "not a git repository; moves were plain mv",
+  "moves": [
+    {
+      "from": "phase1",
+      "to": "archive/legacy_character_pipeline/phase1",
+      "note": "旧角色 Canvas/校准原型",
+      "files": 73,
+      "bytes": 21744430
+    },
+    {
+      "from": "phase2",
+      "to": "archive/legacy_character_pipeline/phase2",
+      "note": "旧角色 PSD 与 Cubism 导出",
+      "files": 6278,
+      "bytes": 1413077405
+    },
+    {
+      "from": "phase3",
+      "to": "archive/legacy_character_pipeline/phase3",
+      "note": "旧角色眨眼交接与发片接缝",
+      "files": 134,
+      "bytes": 94749844
+    },
+    {
+      "from": "phase4",
+      "to": "archive/legacy_character_pipeline/phase4",
+      "note": "旧角色 WebGL 播放器",
+      "files": 2478,
+      "bytes": 43264514
+    },
+    {
+      "from": "outputs",
+      "to": "archive/legacy_character_pipeline/outputs",
+      "note": "旧表情资产与调参器（不含 design_boards）",
+      "files": 48,
+      "bytes": 12388504
+    },
+    {
+      "from": "work",
+      "to": "archive/legacy_character_pipeline/work",
+      "note": "旧处理与 BeefAPI 生图脚本（不含已移出的 pack 脚本）",
+      "files": 30,
+      "bytes": 4243064
+    },
+    {
+      "from": "src",
+      "to": "archive/legacy_character_pipeline/src",
+      "note": "旧管线固定基础图层",
+      "files": 4,
+      "bytes": 2476496
+    },
+    {
+      "from": "outputs/design_boards",
+      "to": "archive/design_boards",
+      "note": "服装/发型概念板",
+      "files": 65,
+      "bytes": 27151374
+    },
+    {
+      "from": "DESIGN.md",
+      "to": "archive/legacy_character_pipeline/DESIGN.md",
+      "note": "phase4 播放器设计说明",
+      "files": 1,
+      "bytes": 2343,
+      "sha256": "0851674511dba76658026c45e6b8786ed49a05d7c3c774fefc64c0b36044a760"
+    },
+    {
+      "from": "ChatGPT 图像 2026年10月19日 02_08_49-1.png",
+      "to": "archive/reference_images/ChatGPT 图像 2026年10月19日 02_08_49-1.png",
+      "note": "雨夜街景参考",
+      "files": 1,
+      "bytes": 2619444,
+      "sha256": "ab24eb680f6c178110cf71f520eec7a4242cefb25239a931f50f820596490db2"
+    },
+    {
+      "from": "ChatGPT 图像 2026年10月19日 02_08_50-2.png",
+      "to": "archive/reference_images/ChatGPT 图像 2026年10月19日 02_08_50-2.png",
+      "note": "雨夜街景参考",
+      "files": 1,
+      "bytes": 2606181,
+      "sha256": "9e43ca67ea213eebfe86112bc7a3b00c2bdda460f76de74ad463ab68b1feae9e"
+    },
+    {
+      "from": "雨窗咖啡馆里的沉思少女.png",
+      "to": "archive/reference_images/雨窗咖啡馆里的沉思少女.png",
+      "note": "雨窗咖啡馆场景参考",
+      "files": 1,
+      "bytes": 2416403,
+      "sha256": "7ac7fac67eecf46f40ee6cfdf77ed8a19ae796540b4bdc2473c1b136971b6a76"
+    },
+    {
+      "from": "IMG_3022.png",
+      "to": "参考/原始参考图/IMG_3022.png",
+      "note": "原始角色参考",
+      "files": 1,
+      "bytes": 535246,
+      "sha256": "d1708634df75ab9550ef534d41b92475d66124c526d44291a92ea86a7ecd55df"
+    },
+    {
+      "from": "IMG_3024.PNG",
+      "to": "参考/原始参考图/IMG_3024.PNG",
+      "note": "侧身角色参考",
+      "files": 1,
+      "bytes": 535585,
+      "sha256": "13adc3d88ed0ce264b6e5c0b6f50350396ef6895067633098a53e3d92ecb53f2"
+    },
+    {
+      "from": "work/live2d_v1_pack.py",
+      "to": "scripts/live2d_v1_pack.py",
+      "note": "当前 v1–v5 PSD 打包入口（移动后继续使用）",
+      "files": 1,
+      "bytes": 8869,
+      "sha256": "4fc6bbb38c8b031cd824f1fd693b4dfbffdbaaf1d31d2b0f145f5daf076d7b07"
+    }
+  ],
+  "copied": [
+    {
+      "from": "archive/legacy_character_pipeline/src/character_base.png",
+      "to": "参考/原始参考图/character_base.png",
+      "note": "原始角色母版副本，便于 v6 参考",
+      "sha256": "d1708634df75ab9550ef534d41b92475d66124c526d44291a92ea86a7ecd55df"
+    }
+  ],
+  "key_hashes": {
+    "live2d_v5/packed/character_front_v5.psd": "f8bf7bd1a858268739598344aa93ebda3065fe2d761fac3b3a17cd7b5095eb0e",
+    "live2d_v5/manifest.json": "b40051ce491da7f60ee678d01dd513adcd2ab26a0c1ae1cb16cb4f5bc311eda9",
+    "live2d_v5/reports/verification.json": "fb2817d1e88f070a01f0d07d6cff7b7464122cf6c2f15de80467baedcf3570e1",
+    "live2d_v5_1/packed/character_front_v5.psd": "66d0dbd933883a9572fc401b590f9261c7313537f6463830bc88a4549ec0bf85",
+    "live2d_v5_1/hair_fix_manifest.json": "767b7c98802673507d9c2620c8baeec5f741f0ad09b75c4c647ab0a2fb60dbab",
+    "scripts/live2d_v1_pack.py": "4fc6bbb38c8b031cd824f1fd693b4dfbffdbaaf1d31d2b0f145f5daf076d7b07"
+  }
+}

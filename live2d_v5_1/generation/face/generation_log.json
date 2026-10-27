@@ -1,0 +1,56 @@
+{
+  "tool": "official built-in image_gen",
+  "requestedModel": "gpt-image-2.5-sunburst",
+  "model": "not exposed by tool",
+  "calls": [
+    {
+      "name": "face",
+      "prompt": "Use case: identity-preserve. Production Live2D raster component, isolated COMPLETE FACE BASE ONLY. The attached image is the approved character identity/color/proportion reference, NOT a silhouette to extract.\nDraw a front-facing complete hairless blank head for exactly this Japanese anime girl: full smooth rounded cranium/forehead/temples/cheeks and clean continuous shallow-V tapered jaw with the same small pointed chin. No ears, no neck, NO eyes or eye holes, NO eyebrows, NO nose, NO mouth, NO hair. Entire inner head is continuous opaque warm pale peach skin, near RGB 252 228 218, very subtle matte shading only. Thin dark desaturated contour confined to lower cheeks and jaw, softly taper it into temples; upper cranium edge can be skin-colored. Style crisp economical 2D anime cel illustration, same proportions as reference, not realistic. Shape must have full hidden forehead, cheek sides and under-hair coverage for future deforming. Bounding shape approximately 174 wide to 191 high proportion (0.91 width/height); chin centered, symmetrical neutral front pose.\nSingle head centered, fills most of canvas, clean smooth anti-aliased edge and truly transparent background outside. No skin cutout holes, no disconnected slivers, no hair shadows shaped like bangs, no body, no checkerboard, no text, no frame. Keep pale flat color matching reference, no glossy highlights or pink painted cheeks.",
+      "tool": "official built-in image_gen",
+      "output": "generation/face/face.png",
+      "model": "not exposed"
+    },
+    {
+      "name": "ear_screen_left",
+      "prompt": "Use case: identity-preserve. Draw ONE isolated complete human ear for a Japanese anime girl Live2D layer, SCREEN LEFT ear (viewer-left, character's anatomical right). Attached head is identity/color/style reference. Preserve its small delicate ear design and pale peach RGB approximately252,228,218 with muted rosy inner-ear shadow and thin charcoal contour. Draw the ear with full hidden root, not just the sliver visible next to hair. Shape: narrow vertically elongated softly curved outer helix on image LEFT, root/attachment on image RIGHT; shallow concha facing viewer, tapered rounded lobe below, front orthographic anime orientation. Complete ear width to height about0.46. No piercing.\nCrisp simple 2D cel anime strokes, restrained inner fold, smooth antialiased edges. Single complete ear fills most canvas height with clear margins; actual transparent background. No face, cheek, hair, head, neck, eyes, text, cast shadow, surrounding skin block or checkerboard. Do not mirror the head composition: output only the left ear component with concealed attachment drawn.",
+      "tool": "official built-in image_gen",
+      "output": "generation/face/ear_screen_left.png",
+      "model": "not exposed"
+    },
+    {
+      "name": "ear_screen_right",
+      "prompt": "Use case: identity-preserve. ONE complete ear only, screen RIGHT / viewer-right ear of this Japanese anime girl, character's anatomical left ear. Attached head provides shape color and style. Pale peach near RGB252228218 with simple muted pink inner concha, thin charcoal contour. Complete hidden ear-root, not a strip extracted from the picture. Outer rounded helix is on IMAGE RIGHT, inner root attaching to head on IMAGE LEFT. Frontal anime perspective, narrow vertical delicate small ear, width/height approximately0.45; one subtle inner fold and rounded tapered lobe, same minimalist linework as reference. Root has clean continuous enclosed edge and enough hidden attachment, no jagged vertical cut. Draw large clean isolated ear centered on true transparent background, all margins clear. NO surrounding face, scalp, hair, skin rectangle, neck, earrings, realistic heavy cartilage, external shadows, checkerboard or text. Smooth antialiased edges.",
+      "tool": "official built-in image_gen",
+      "output": "generation/face/ear_screen_right.png",
+      "model": "not exposed"
+    },
+    {
+      "name": "nose",
+      "prompt": "Use case: identity-preserve. One isolated tiny anime NOSE MARK ONLY for the girl in attached approved front illustration. This is a separate transparent overlay to place over a face base, NOT an image of a nose on a skin square.\nDraw the reference's very minimal short vertical tapered warm taupe nose-tip shadow: a subtle soft edged little dash, slightly darker at lower end, muted mauve/taupe RGB roughly170,145,143. Very narrow and delicate, height roughly2.3 times width, like the short central dash in the attached character image. No realistic nostrils, no bridge, no nose silhouette in profile, no mouth, no face, NO opaque skin paint around mark. Only the semitransparent nose shadow itself, smoothly fading alpha to completely transparent surroundings, no white halo. Center this single small dash enlarged enough to fill half the canvas height for precise downsampling; unclipped with large transparent margins. Minimal 2D anime cel art, no gloss, no text, no checkerboard.",
+      "tool": "official built-in image_gen",
+      "status": "failed",
+      "reason": "output moderation_blocked; no output file"
+    },
+    {
+      "name": "nose",
+      "prompt": "Transparent raster facial animation asset: a single minimalist stylized anime nose-tip mark. Draw only a short upright softly tapered warm taupe stroke, as a subtle front-facing nose shadow. The mark is about two times taller than wide, rounded at its lower end, color muted brown-gray, softly fading in opacity at its edges. Large centered mark with ample transparent margin, intended for downscaling into a 3-by-6-pixel overlay. Only the mark exists; the entire surrounding area is genuinely transparent. No skin patch, no face or head, no other features, no background, no symbols or text. Simple clean illustration with smooth antialiasing.",
+      "tool": "official built-in image_gen",
+      "output": "generation/face/nose.png",
+      "model": "not exposed"
+    },
+    {
+      "name": "mouth",
+      "prompt": "Use case: identity-preserve. Separate CLOSED MOUTH LINE ONLY for Live2D anime character, based on the tiny neutral friendly closed mouth in attached head reference.\nDraw a very shallow relaxed upward smile, minimal fine warm gray-brown line, gentle rise at both corners, center subtly lower. Overall width to height about9:1. The reference mouth is two gently curving strokes with a small natural central gap; keep that understated delicate expression, no pronounced lips. Fine smoothly tapered ends, muted taupe RGB about150,133,132. Single enlarged centered mouth mark only, fills about70% canvas width, true transparent background with clear margins. No skin paint or skin rectangle, no face or head, no lip gloss, no lipstick, no teeth, no open mouth, no chin or nose, no lower-lip highlight, no text or checkerboard. Only sparse line art on transparency.",
+      "tool": "official built-in image_gen",
+      "output": "generation/face/mouth.png",
+      "model": "not exposed"
+    },
+    {
+      "name": "neck_bridge",
+      "prompt": "Use case: precise-object-edit. Create one isolated Live2D NECK CONNECTION component for the attached anime character, NOT a head. Reference has pale peach face and a white mannequin body/white high collar immediately below chin. Draw a short front-facing symmetric smooth narrow neck column, straight sides slightly widening at base: top approximately66% of the component width, bottom100%, height approximately75% of totalwidth. Upper neck pale muted peach under-chin shadow RGB near230,195,185, flowing gently into white lower high-neck mannequin/collar region. Soft shallow curved transition, both shoulders absent. Very thin charcoal outline on outer left/right boundaries only; hidden top edge rounded, bottom gently rounded to overlap existing white neck. The top third will be covered by the separate face base. IMPORTANT no chin or jaw line anywhere inside this neck, no V-shaped black line, no facial features, no head, no hair, no clavicles, no shoulders, no torso. Clean flat simple Japanese anime cel rendering, smooth antialias. Single neck connector on actual transparency, no skin rectangle or gray background, no text or checkerboard. Generous transparent margins.",
+      "tool": "official built-in image_gen",
+      "output": "generation/face/neck_bridge.png",
+      "model": "not exposed"
+    }
+  ]
+}

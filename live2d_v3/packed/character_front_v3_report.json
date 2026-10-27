@@ -1,0 +1,632 @@
+{
+  "schemaVersion": 1,
+  "manifest": "/Users/Link/code/Character/live2d_v3/manifest.json",
+  "canvas": [
+    1024,
+    1536
+  ],
+  "mode": "RGBA source / RGB PSD with transparency channels",
+  "depth": 8,
+  "painterOrder": "bottom-to-top",
+  "outputs": {
+    "psd": "/Users/Link/code/Character/live2d_v3/packed/character_front_v3.psd",
+    "composite": "/Users/Link/code/Character/live2d_v3/packed/character_front_v3_composite.png",
+    "psdSha256": "70727bfc708c5cea9ad09d8c0fd3941126a90316f03ace5938ac65be4735a074",
+    "compositeSha256": "d7f2fd942dc5a01492b426372a315c6d91a5a789874eed320e87b476e2313a21"
+  },
+  "layers": [
+    {
+      "index": 0,
+      "name": "neck",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/body/neck.png",
+      "visible": true,
+      "bounds": [
+        470,
+        270,
+        550,
+        342
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 4711,
+      "sha256": "e167b17396e1c026ced37083ed254bc24a0a8da8c626b1a72eb21565ffe91f46"
+    },
+    {
+      "index": 1,
+      "name": "screen_left_hand",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/body/screen_left_hand.png",
+      "visible": true,
+      "bounds": [
+        240,
+        723,
+        300,
+        880
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 5722,
+      "sha256": "cf46b9ff89761215e36cebb34bcb3c6e9eb034c65cbc574bf2ee6ee1176c79ba"
+    },
+    {
+      "index": 2,
+      "name": "screen_right_hand",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/body/screen_right_hand.png",
+      "visible": true,
+      "bounds": [
+        721,
+        723,
+        784,
+        880
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 5720,
+      "sha256": "569ebdf0d60a27f49d85f044708151e7f1c55af705fe407eda943f7ddea44bdd"
+    },
+    {
+      "index": 3,
+      "name": "screen_left_forearm",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/body/screen_left_forearm.png",
+      "visible": true,
+      "bounds": [
+        262,
+        541,
+        377,
+        735
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 10171,
+      "sha256": "2808e85f4896ac20c9253a5e3d2b6b3a945d1d463c3c9db4839d229e12c4cd82"
+    },
+    {
+      "index": 4,
+      "name": "screen_right_forearm",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/body/screen_right_forearm.png",
+      "visible": true,
+      "bounds": [
+        643,
+        541,
+        759,
+        735
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 10173,
+      "sha256": "c2229c05ba67c14178c9e72fb55dda8ed7bb7d670f70d4276940839ba68e72df"
+    },
+    {
+      "index": 5,
+      "name": "screen_left_upper_arm",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/body/screen_left_upper_arm.png",
+      "visible": true,
+      "bounds": [
+        323,
+        315,
+        470,
+        555
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 21543,
+      "sha256": "8da9a79817c347ab1800867cf76e39405256e6abc1ce4ed642556cfbc14587db"
+    },
+    {
+      "index": 6,
+      "name": "screen_right_upper_arm",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/body/screen_right_upper_arm.png",
+      "visible": true,
+      "bounds": [
+        555,
+        317,
+        697,
+        555
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 20437,
+      "sha256": "55d686aaf438d2ad5537afe3ce3ec17c21dcb3e06bd081b42a2e6badc705d969"
+    },
+    {
+      "index": 7,
+      "name": "screen_left_foot",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/body/screen_left_foot.png",
+      "visible": true,
+      "bounds": [
+        384,
+        1363,
+        462,
+        1503
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 8024,
+      "sha256": "443ca398ac33839e64dbe032a3575dcba7a0658d31469e71c178d9227fd79a46"
+    },
+    {
+      "index": 8,
+      "name": "screen_right_foot",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/body/screen_right_foot.png",
+      "visible": true,
+      "bounds": [
+        559,
+        1363,
+        637,
+        1503
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 7998,
+      "sha256": "93651ea573734cc491623481dde310d1ea220a18d99d296805221fbf82309630"
+    },
+    {
+      "index": 9,
+      "name": "screen_left_lower_leg",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/body/screen_left_lower_leg.png",
+      "visible": true,
+      "bounds": [
+        385,
+        1018,
+        488,
+        1375
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 24156,
+      "sha256": "4a7cfe98acc179a08b2dc238ffab50dcde46a4ce1380d12d8aa5dc843858c3af"
+    },
+    {
+      "index": 10,
+      "name": "screen_right_lower_leg",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/body/screen_right_lower_leg.png",
+      "visible": true,
+      "bounds": [
+        533,
+        1018,
+        636,
+        1375
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 24096,
+      "sha256": "67ee110519bd4312d31b62683628672e40d3e5103869fef5e65326156dc0a8dd"
+    },
+    {
+      "index": 11,
+      "name": "screen_left_thigh",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/body/screen_left_thigh.png",
+      "visible": true,
+      "bounds": [
+        375,
+        733,
+        524,
+        1030
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 31416,
+      "sha256": "0c49dfee288c552a759f79bc674ac4448072057f30491456346c20967b012c17"
+    },
+    {
+      "index": 12,
+      "name": "screen_right_thigh",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/body/screen_right_thigh.png",
+      "visible": true,
+      "bounds": [
+        502,
+        733,
+        647,
+        1030
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 31229,
+      "sha256": "7e074e605342000e2b55ba4a6f5025eb716660ddc514f04721fce0ecc8127727"
+    },
+    {
+      "index": 13,
+      "name": "torso_pelvis",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/body/torso_pelvis.png",
+      "visible": true,
+      "bounds": [
+        238,
+        300,
+        646,
+        811
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 70412,
+      "sha256": "60607f94a6af7dfb1c2065d06f4211a6a14ef6102b0708d11e191ffc1eac415e"
+    },
+    {
+      "index": 14,
+      "name": "hair_back",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/hair_refined/hair_back.png",
+      "visible": true,
+      "bounds": [
+        410,
+        27,
+        614,
+        236
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 33460,
+      "sha256": "ab444593118b6a3ec11fb0fe57500d75e2a449d6e9360194bff7575539cb5840"
+    },
+    {
+      "index": 15,
+      "name": "neck_bridge",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/hair_refined/neck_bridge.png",
+      "visible": true,
+      "bounds": [
+        475,
+        245,
+        551,
+        287
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 2323,
+      "sha256": "693583e894708c968488ec01b8f93d370aed02c2545883e612b76affbdb0f4ab"
+    },
+    {
+      "index": 16,
+      "name": "face",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/hair_refined/face.png",
+      "visible": true,
+      "bounds": [
+        423,
+        79,
+        597,
+        270
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 25545,
+      "sha256": "1d21fd8d640788933abc66c9862221433b947d631fa558b7eb687974e4212c54"
+    },
+    {
+      "index": 17,
+      "name": "ear_screen_left",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/hair_refined/ear_screen_left.png",
+      "visible": true,
+      "bounds": [
+        409,
+        185,
+        425,
+        224
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 412,
+      "sha256": "45766db055366510cbed83245642ce9e7ce61290a0e6fc4261f45b006b94af68"
+    },
+    {
+      "index": 18,
+      "name": "ear_screen_right",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/hair_refined/ear_screen_right.png",
+      "visible": true,
+      "bounds": [
+        590,
+        181,
+        609,
+        225
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 539,
+      "sha256": "0ccf1b1ffaa6ac947cfce8e23606e068b346adecb9eff76ecf2f435b443d863b"
+    },
+    {
+      "index": 19,
+      "name": "eyewhite_screen_left",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/eyes/eyewhite_screen_left.png",
+      "visible": true,
+      "bounds": [
+        442,
+        180,
+        487,
+        213
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 986,
+      "sha256": "2fe5bbd78fdadc6b44a79690b73863cd29e5f7a663cc78bf0cc542b6d8bb6c5b"
+    },
+    {
+      "index": 20,
+      "name": "iris_screen_left",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/eyes/iris_screen_left.png",
+      "visible": true,
+      "bounds": [
+        452,
+        180,
+        484,
+        211
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 691,
+      "sha256": "c4eb8772d11493f9144dfb991adad8bbfa69fb511faeb6e3c4fbc7cc6a95ea3b"
+    },
+    {
+      "index": 21,
+      "name": "lower_lid_screen_left",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/eyes/lower_lid_screen_left.png",
+      "visible": true,
+      "bounds": [
+        441,
+        185,
+        487,
+        210
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 143,
+      "sha256": "ef15cc3e0474eb1aefd070727d2ca07714624e3b8d591e1e909ae739df5b5d9b"
+    },
+    {
+      "index": 22,
+      "name": "upper_lid_screen_left",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/eyes/upper_lid_screen_left.png",
+      "visible": true,
+      "bounds": [
+        431,
+        174,
+        491,
+        190
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 478,
+      "sha256": "6003df3404da947fd0e58004a9b5935d80bbf73b1a5bb8b6193492eddb6fc319"
+    },
+    {
+      "index": 23,
+      "name": "eyewhite_screen_right",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/eyes/eyewhite_screen_right.png",
+      "visible": true,
+      "bounds": [
+        531,
+        180,
+        581,
+        213
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 1114,
+      "sha256": "c6ad09655b33b282c29a32ddeed7ce9e6f6696dd1295be82c55b4b4e65ef306f"
+    },
+    {
+      "index": 24,
+      "name": "iris_screen_right",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/eyes/iris_screen_right.png",
+      "visible": true,
+      "bounds": [
+        534,
+        180,
+        566,
+        211
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 699,
+      "sha256": "dfc778d7df30bed1ed6ca0937dcef266fcae7fdc23951ddf7dafa7ae87bb6556"
+    },
+    {
+      "index": 25,
+      "name": "lower_lid_screen_right",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/eyes/lower_lid_screen_right.png",
+      "visible": true,
+      "bounds": [
+        530,
+        186,
+        581,
+        211
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 166,
+      "sha256": "ec1b905e24e42d63662be6e8e8f01baf675df04d33cfe7102b8a44cd2d91cee3"
+    },
+    {
+      "index": 26,
+      "name": "upper_lid_screen_right",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/eyes/upper_lid_screen_right.png",
+      "visible": true,
+      "bounds": [
+        524,
+        174,
+        587,
+        189
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 493,
+      "sha256": "f48e0b94c96e0908050b0080ce46ff3d81cea7ffad1682c54d9a17e8b763bec3"
+    },
+    {
+      "index": 27,
+      "name": "brow_screen_left",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/hair_refined/brow_screen_left.png",
+      "visible": true,
+      "bounds": [
+        435,
+        148,
+        477,
+        159
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 309,
+      "sha256": "0cc77a12adae67d1935ea1f0c64441a8b6f46bcbc1bffbe62e47fe2e1ee785bc"
+    },
+    {
+      "index": 28,
+      "name": "brow_screen_right",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/hair_refined/brow_screen_right.png",
+      "visible": true,
+      "bounds": [
+        529,
+        148,
+        574,
+        161
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 488,
+      "sha256": "36a3ed1d88d10bc76144d291282a00a7d94084a3b2a2caaeeb6af076f350829f"
+    },
+    {
+      "index": 29,
+      "name": "nose",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/hair_refined/nose.png",
+      "visible": true,
+      "bounds": [
+        507,
+        215,
+        511,
+        221
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 20,
+      "sha256": "46fa5df491bd79def21e2593f3689db4bb8548b1191fdb9ce3b3c7c8ed4171eb"
+    },
+    {
+      "index": 30,
+      "name": "mouth",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/hair_refined/mouth.png",
+      "visible": true,
+      "bounds": [
+        496,
+        234,
+        524,
+        240
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 87,
+      "sha256": "acf42c1782f3684fe0bda9e39d8f51e14d46002b09853a559b8378daa3dd56f7"
+    },
+    {
+      "index": 31,
+      "name": "hair_front_fixed",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/hair_refined/hair_front_fixed.png",
+      "visible": true,
+      "bounds": [
+        367,
+        22,
+        649,
+        301
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 42089,
+      "sha256": "902ddfbbe020cf4f20e78494bab2616ef343cf016825be503bc3381b27bca1c8"
+    },
+    {
+      "index": 32,
+      "name": "hair_fringe_center",
+      "file": "/Users/Link/code/Character/live2d_v3/assets/hair_refined/hair_fringe_center.png",
+      "visible": true,
+      "bounds": [
+        470,
+        82,
+        536,
+        189
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "nonemptyAlphaPixels": 5693,
+      "sha256": "4e5ad4305b676bcb39f4da79e1b6fda44a3d87732064abb59b85c0b9e7725787"
+    }
+  ],
+  "validation": {
+    "psdReadbackAvailable": true,
+    "psdCanvas": [
+      1024,
+      1536
+    ],
+    "layerCount": 33,
+    "visibleLayerCount": 33,
+    "hiddenLayerCount": 0,
+    "decodedChannelPixelChanges": 0,
+    "layerNamesAndOrderMatch": true,
+    "layerVisibilityMatches": true
+  },
+  "limitations": [
+    "Inputs must already be semantically separated full-canvas RGBA PNGs.",
+    "The packer crops only the PSD storage rectangles; report dimensions preserve the full input canvas.",
+    "No concealed artwork, masks, eye states, mesh, parameters, physics, or Live2D binding are generated.",
+    "PSD readback proves pixel-layer packaging, not Cubism Editor or runtime compatibility."
+  ]
+}

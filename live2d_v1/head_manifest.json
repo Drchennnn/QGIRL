@@ -1,0 +1,223 @@
+{
+  "canvas": [
+    1024,
+    1536
+  ],
+  "coordinateConvention": "screen left/right",
+  "layers": [
+    {
+      "name": "hair_back",
+      "file": "assets/head/hair_back.png",
+      "visible": true
+    },
+    {
+      "name": "ear_screen_left",
+      "file": "assets/head/ear_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "ear_screen_right",
+      "file": "assets/head/ear_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "face",
+      "file": "assets/head/face.png",
+      "visible": true
+    },
+    {
+      "name": "hair_crown",
+      "file": "assets/head/hair_crown.png",
+      "visible": true
+    },
+    {
+      "name": "hair_side_screen_left",
+      "file": "assets/head/hair_side_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "hair_side_screen_right",
+      "file": "assets/head/hair_side_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "hair_streak_screen_left",
+      "file": "assets/head/hair_streak_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "hair_streak_screen_right",
+      "file": "assets/head/hair_streak_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "brow_screen_left",
+      "file": "assets/head/brow_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "brow_screen_right",
+      "file": "assets/head/brow_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "eyewhite_screen_left",
+      "file": "assets/head/eyewhite_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "eyewhite_screen_right",
+      "file": "assets/head/eyewhite_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "iris_screen_left",
+      "file": "assets/head/iris_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "iris_screen_right",
+      "file": "assets/head/iris_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "upper_lid_screen_left",
+      "file": "assets/head/upper_lid_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "upper_lid_screen_right",
+      "file": "assets/head/upper_lid_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "lower_lid_screen_left",
+      "file": "assets/head/lower_lid_screen_left.png",
+      "visible": true
+    },
+    {
+      "name": "lower_lid_screen_right",
+      "file": "assets/head/lower_lid_screen_right.png",
+      "visible": true
+    },
+    {
+      "name": "nose",
+      "file": "assets/head/nose.png",
+      "visible": true
+    },
+    {
+      "name": "mouth",
+      "file": "assets/head/mouth.png",
+      "visible": true
+    },
+    {
+      "name": "hair_fringe_center",
+      "file": "assets/head/hair_fringe_center.png",
+      "visible": true
+    },
+    {
+      "name": "clip_screen_left",
+      "file": "assets/head/clip_screen_left.png",
+      "visible": true
+    }
+  ],
+  "boundary": "body y>=300 OR (y>=270 AND 482<=x<=537)",
+  "validation": {
+    "neutralChangedPixels": 0
+  },
+  "paintMethod": "Local flat-colour and nearest-source extension in concealed pixels only; no AI regeneration.",
+  "layerStats": {
+    "hair_back": {
+      "visiblePixels": 8187,
+      "concealedPaintPixels": 39576
+    },
+    "ear_screen_left": {
+      "visiblePixels": 928,
+      "concealedPaintPixels": 901
+    },
+    "ear_screen_right": {
+      "visiblePixels": 763,
+      "concealedPaintPixels": 649
+    },
+    "face": {
+      "visiblePixels": 7130,
+      "concealedPaintPixels": 16910
+    },
+    "hair_crown": {
+      "visiblePixels": 12939,
+      "concealedPaintPixels": 5244
+    },
+    "hair_side_screen_left": {
+      "visiblePixels": 5336,
+      "concealedPaintPixels": 1811
+    },
+    "hair_side_screen_right": {
+      "visiblePixels": 3963,
+      "concealedPaintPixels": 1005
+    },
+    "hair_streak_screen_left": {
+      "visiblePixels": 1085,
+      "concealedPaintPixels": 0
+    },
+    "hair_streak_screen_right": {
+      "visiblePixels": 976,
+      "concealedPaintPixels": 0
+    },
+    "brow_screen_left": {
+      "visiblePixels": 104,
+      "concealedPaintPixels": 0
+    },
+    "brow_screen_right": {
+      "visiblePixels": 120,
+      "concealedPaintPixels": 0
+    },
+    "eyewhite_screen_left": {
+      "visiblePixels": 372,
+      "concealedPaintPixels": 625
+    },
+    "eyewhite_screen_right": {
+      "visiblePixels": 402,
+      "concealedPaintPixels": 719
+    },
+    "iris_screen_left": {
+      "visiblePixels": 616,
+      "concealedPaintPixels": 35
+    },
+    "iris_screen_right": {
+      "visiblePixels": 705,
+      "concealedPaintPixels": 50
+    },
+    "upper_lid_screen_left": {
+      "visiblePixels": 507,
+      "concealedPaintPixels": 0
+    },
+    "upper_lid_screen_right": {
+      "visiblePixels": 505,
+      "concealedPaintPixels": 0
+    },
+    "lower_lid_screen_left": {
+      "visiblePixels": 9,
+      "concealedPaintPixels": 0
+    },
+    "lower_lid_screen_right": {
+      "visiblePixels": 14,
+      "concealedPaintPixels": 0
+    },
+    "nose": {
+      "visiblePixels": 20,
+      "concealedPaintPixels": 0
+    },
+    "mouth": {
+      "visiblePixels": 87,
+      "concealedPaintPixels": 0
+    },
+    "hair_fringe_center": {
+      "visiblePixels": 6893,
+      "concealedPaintPixels": 0
+    },
+    "clip_screen_left": {
+      "visiblePixels": 660,
+      "concealedPaintPixels": 0
+    }
+  }
+}

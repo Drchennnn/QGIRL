@@ -1,0 +1,38 @@
+{
+  "canvas": [
+    1024,
+    1536
+  ],
+  "layers": 37,
+  "neutralChangedPixels": 0,
+  "allFullCanvasRGBA": true,
+  "clipMeanScreenX": 425.90909090909093,
+  "headMotionChecks": [
+    {
+      "pose": "neutral",
+      "newTransparentHeadInteriorPixels": 0
+    },
+    {
+      "pose": "fringe -3px",
+      "newTransparentHeadInteriorPixels": 0
+    },
+    {
+      "pose": "fringe +3px",
+      "newTransparentHeadInteriorPixels": 0
+    },
+    {
+      "pose": "iris -2px",
+      "newTransparentHeadInteriorPixels": 0
+    },
+    {
+      "pose": "iris +2px",
+      "newTransparentHeadInteriorPixels": 0
+    }
+  ],
+  "limitations": [
+    "Small translations only; no Cubism meshes, deformers, parameters, physics or runtime export.",
+    "Concealed art uses local flat-color and nearest-source extension.",
+    "Zero transparent holes does not prove production quality; inspect edges before rigging.",
+    "White mannequin follows latest confirmed scope; outfit remains separate."
+  ]
+}

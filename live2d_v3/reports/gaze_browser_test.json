@@ -1,0 +1,214 @@
+{
+  "maskAlphaContract": [
+    {
+      "name": "iris_screen_left",
+      "backgroundAlpha": 0
+    },
+    {
+      "name": "iris_screen_right",
+      "backgroundAlpha": 0
+    }
+  ],
+  "visibleColourTolerance": 1.1,
+  "checks": [
+    {
+      "x": -4,
+      "y": -2,
+      "outsideChanges": 0,
+      "insideChanges": 5822,
+      "quantizationOnly": 854,
+      "eyes": {
+        "screen_left": {
+          "x": -1,
+          "y": -1
+        },
+        "screen_right": {
+          "x": -1,
+          "y": -1
+        }
+      },
+      "examples": []
+    },
+    {
+      "x": 0,
+      "y": -2,
+      "outsideChanges": 0,
+      "insideChanges": 4808,
+      "quantizationOnly": 854,
+      "eyes": {
+        "screen_left": {
+          "x": 0,
+          "y": -1
+        },
+        "screen_right": {
+          "x": 0,
+          "y": -1
+        }
+      },
+      "examples": []
+    },
+    {
+      "x": 4,
+      "y": -2,
+      "outsideChanges": 0,
+      "insideChanges": 5817,
+      "quantizationOnly": 854,
+      "eyes": {
+        "screen_left": {
+          "x": 1,
+          "y": -1
+        },
+        "screen_right": {
+          "x": 1,
+          "y": -1
+        }
+      },
+      "examples": []
+    },
+    {
+      "x": -4,
+      "y": 0,
+      "outsideChanges": 0,
+      "insideChanges": 5621,
+      "quantizationOnly": 854,
+      "eyes": {
+        "screen_left": {
+          "x": -1,
+          "y": 0
+        },
+        "screen_right": {
+          "x": -1,
+          "y": 0
+        }
+      },
+      "examples": []
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "outsideChanges": 0,
+      "insideChanges": 0,
+      "quantizationOnly": 854,
+      "eyes": {
+        "screen_left": {
+          "x": 0,
+          "y": 0
+        },
+        "screen_right": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "examples": []
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "outsideChanges": 0,
+      "insideChanges": 5881,
+      "quantizationOnly": 854,
+      "eyes": {
+        "screen_left": {
+          "x": 1,
+          "y": 0
+        },
+        "screen_right": {
+          "x": 1,
+          "y": 0
+        }
+      },
+      "examples": []
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "outsideChanges": 0,
+      "insideChanges": 5630,
+      "quantizationOnly": 854,
+      "eyes": {
+        "screen_left": {
+          "x": -1,
+          "y": 1
+        },
+        "screen_right": {
+          "x": -1,
+          "y": 1
+        }
+      },
+      "examples": []
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "outsideChanges": 0,
+      "insideChanges": 4710,
+      "quantizationOnly": 854,
+      "eyes": {
+        "screen_left": {
+          "x": 0,
+          "y": 1
+        },
+        "screen_right": {
+          "x": 0,
+          "y": 1
+        }
+      },
+      "examples": []
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "outsideChanges": 0,
+      "insideChanges": 6011,
+      "quantizationOnly": 854,
+      "eyes": {
+        "screen_left": {
+          "x": 1,
+          "y": 1
+        },
+        "screen_right": {
+          "x": 1,
+          "y": 1
+        }
+      },
+      "examples": []
+    },
+    {
+      "x": -1.52,
+      "y": 0.74,
+      "outsideChanges": 0,
+      "insideChanges": 4971,
+      "quantizationOnly": 854,
+      "eyes": {
+        "screen_left": {
+          "x": -0.38,
+          "y": 0.37
+        },
+        "screen_right": {
+          "x": -0.38,
+          "y": 0.37
+        }
+      },
+      "examples": []
+    },
+    {
+      "x": 2.24,
+      "y": -1.26,
+      "outsideChanges": 0,
+      "insideChanges": 5203,
+      "quantizationOnly": 854,
+      "eyes": {
+        "screen_left": {
+          "x": 0.56,
+          "y": -0.63
+        },
+        "screen_right": {
+          "x": 0.56,
+          "y": -0.63
+        }
+      },
+      "examples": []
+    }
+  ],
+  "passed": true
+}
