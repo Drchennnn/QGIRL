@@ -1,0 +1,74 @@
+diff --git a/common/utils/inference_utils.py b/common/utils/inference_utils.py
+index 770c5dc..5011840 100644
+--- a/common/utils/inference_utils.py
++++ b/common/utils/inference_utils.py
+@@ -119,6 +119,13 @@ def apply_layerdiff(
+                 y2 = min(max(y + h + py, 0), ih)
+                 y1 = min(max(y - py, 0), ih)
+ 
++            # Generated head masks may be empty or lie in the square padding.
++            # Never pass a zero-sized or negatively indexed crop to resize.
++            x1, x2 = max(0, min(x1, iw)), max(0, min(x2, iw))
++            y1, y2 = max(0, min(y1, ih)), max(0, min(y2, ih))
++            if x2 <= x1 or y2 <= y1:
++                print('WARNING: inferred head crop is empty; using the full head-reference image', flush=True)
++                return img, (0, 0, iw, ih)
+             return img[y1: y2, x1: x2], (x1, y1, x2, y2)
+ 
+         body_tag_list = ['front hair', 'back hair', 'head', 'neck', 'neckwear', 'topwear', 'handwear', 'bottomwear', 'legwear', 'footwear', 'tail', 'wings', 'objects']
+@@ -137,6 +144,13 @@ def apply_layerdiff(
+         for rst, tag in zip(pipeline_output.images, body_tag_list):
+             savename = osp.join(saved, f'{tag}.png')
+             Image.fromarray(rst).save(savename)
++        head_mode = os.environ.get('CHARACTER_HEAD_MODE', 'inferred')
++        if head_mode == 'back_body_only':
++            dict2json({'headMode': head_mode, 'headStageSkipped': True}, osp.join(saved, 'head_strategy.json'))
++            print('Back view: skip facial-part generation', flush=True)
++            return
++        if head_mode not in ('inferred', 'full_input_head_crop'):
++            raise ValueError(f'Unknown head mode: {head_mode}')
+         head_img = images[2]
+         # head_img = np.array(Image.open(osp.join(saved, 'head.png')))
+ 
+@@ -147,7 +161,12 @@ def apply_layerdiff(
+         hy = int(hy0 * scale) - pad_pos[1]
+         hw = int(hw * scale)
+         hh = int(hh * scale)
+-        input_head, (hx1, hy1, hx2, hy2) = _crop_head(input_img, [hx, hy, hw, hh])
++        if head_mode == 'full_input_head_crop':
++            input_head = input_img
++            hx1, hy1, hx2, hy2 = 0, 0, input_img.shape[1], input_img.shape[0]
++        else:
++            input_head, (hx1, hy1, hx2, hy2) = _crop_head(input_img, [hx, hy, hw, hh])
++        dict2json({'headMode': head_mode, 'sourceBounds': [hx1, hy1, hx2, hy2]}, osp.join(saved, 'head_strategy.json'))
+         hx1 = int(hx1 / scale + pad_pos[0] / scale)
+         hy1 = int(hy1 / scale + pad_pos[1] / scale)
+         ih, iw = input_head.shape[:2]
+@@ -185,6 +204,12 @@ def apply_layerdiff(
+ 
+ 
+ 
++def _existing_part_metadata(parts, saved):
++    """Export only layers with a real image, including body-only back views."""
++    return {tag: metadata for tag, metadata in parts.items()
++            if osp.isfile(osp.join(saved, tag + '.png'))}
++
++
+ marigold_pipeline: MarigoldDepthPipeline = None
+ def apply_marigold(srcp, pretrained: str, num_inference_steps=-1, seed=0, save_dir='workspace/layerdiff_output', target_tag_list=VALID_BODY_PARTS_V2, \
+     resolution=768, normalize_depth=False, disable_progressbar=False, cache_tag_embeds=True, group_offload=False):
+@@ -320,6 +345,7 @@ def apply_marigold(srcp, pretrained: str, num_inference_steps=-1, seed=0, save_d
+             parts_info['depth_max'] = depth_max
+             parts_info['depth_min'] = depth_min
+ 
++    info["parts"] = _existing_part_metadata(parts, saved)
+     dict2json(info, infop)
+     Image.fromarray(blended).save(osp.join(saved, 'reconstruction.png'))
+ 
+@@ -660,4 +686,4 @@ def seg_wlr_psd(srcp, target_tags, savep=None):
+         part_infos['parts'].update(rst_dict)
+ 
+     dump_parts_psd(part_infos['parts'], part_infos['frame_size'], savep)
+-    print(f'psd saved to {savep}')
+\ No newline at end of file
++    print(f'psd saved to {savep}')

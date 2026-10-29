@@ -1,130 +1,47 @@
-# Codex 多 Agent 环境（Live2D）
+# Codex 协作分工（Live2D）
 
-2026-10-27 维护时未改动模型路由、Profile、Effort、Provider 或认证；本页只补充当前项目文档关系。项目角色规范见 [../AGENTS.md](../AGENTS.md)，项目进度见 [../docs/PROGRESS.md](../docs/PROGRESS.md)。
+2026-10-29 更新：See-through 拆层正面候选是活动主线；独立 `eye_close_trial v2` 已通过 Anime2.5DRig 技术验证，视觉确认仍待完成；旧自行拆分版本已归档。保留执行与独立审核分工，但不指定任何模型、Effort、Provider 或专用 Profile。当前恢复入口是根 `README.md` 与唯一计划 `docs/PROGRESS.md`。
 
-## 当前配置
+## 分工
 
-- 主 Agent：在 Codex 界面用 `/model` 选择，Profile 不锁定主模型。
-- 子 Agent：默认 `gpt-6-astra` / `medium`；Reviewer 角色固定同一组值。
-- Provider：由 CC Switch 当前线路决定；主/子 Agent 不得跨 Provider。
-- 两条线路共用同一个 `live2d` Profile；CC Switch 只切 Provider，不切 Agent 配置。
-
-## 为什么源文件在 `codex/`，而不是 `.codex/`
-
-当前 Codex CLI 0.164.0 只加载以下位置：
-
-- `$CODEX_HOME/config.toml`
-- `$CODEX_HOME/<profile>.config.toml`（通过 `codex -p <profile>`）
-- `$CODEX_HOME/agents/*.toml`（原生子 Agent 角色）
-
-项目内的 `.codex/config.toml` 不会被加载（已实测：`codex doctor` 仍只报告 `~/.codex/config.toml`）。因此源文件保留在项目 `codex/`，由安装脚本创建符号链接到 `~/.codex/`。
-
-安装脚本不会修改 CC Switch 管理的 `config.toml`、`auth.json` 或 `[model_providers.*]`。
-
-## 文件
-
-| 文件 | 作用 |
-|---|---|
-| `codex/profiles/live2d.config.toml` | 只设置子 Agent 默认值；主模型由 Codex 界面选择 |
-| `codex/agents/live2d-reviewer.toml` | 只读 Reviewer 角色，固定 `gpt-6-astra` / `medium` |
-| `scripts/install-codex-live2d.sh` | 创建/校验 `~/.codex` 下的符号链接 |
-| `scripts/codex-live2d` | 自动识别 CC Switch 线路并启动 Codex |
-| `AGENTS.md` | 项目内 Executor / Reviewer 职责与工作流 |
-
-## 安装
-
-```sh
-cd /Users/Link/code/Character
-./scripts/install-codex-live2d.sh
-```
-
-脚本是幂等的；如果目标位置已有不同文件或指向别处的符号链接，会拒绝覆盖。旧版按线路拆分的两个 Profile 会被自动清理。
-
-## 启动
-
-先在 CC Switch 切到官方 Plus 或 BeefAPI，然后：
-
-```sh
-./scripts/codex-live2d
-```
-
-脚本会自动识别当前线路并打印，例如：
-
-```text
-[codex-live2d] provider=official reviewer=gpt-6-astra/medium; main model is chosen in Codex UI
-```
-
-也可以显式校验线路：
-
-```sh
-./scripts/codex-live2d official
-./scripts/codex-live2d beefapi
-```
-
-线路不匹配时脚本会拒绝启动，避免主/子 Agent 跨 Provider。
-
-进入 Codex 后，用界面的 `/model` 选择主 Agent 的模型和 Effort；本项目 Profile 不锁定主模型。
-
-### 启动入口差异
-
-- 通过 `./scripts/codex-live2d` 启动：`live2d` Profile 会注入 `[agents]` 默认值，普通子 Agent 自动使用 `gpt-6-astra` / `medium`。
-- 直接从 Codex 桌面或 VS Code 界面启动：Profile 不会加载。此时 Reviewer 角色仍固定 `gpt-6-astra` / `medium`；普通子 Agent 需要主 Agent 按项目 `AGENTS.md` 显式传 `model="gpt-6-astra"`、`reasoning_effort="medium"`，否则可能继承主 Agent 的选择。
-
-如果不希望依赖提示词约束，请始终用 `./scripts/codex-live2d` 启动。
-
-本项目假定 CC Switch 处于直连模式。聚合/路由模式可能改写模型路由，不建议用于本项目。
-
-## 模型
-
-| 模式 | Executor（主） | Reviewer（子） |
+| 角色 | 职责 | 权限 |
 |---|---|---|
-| 官方 Plus | Codex 界面 `/model` 选择 | `gpt-6-astra` / `medium` |
-| BeefAPI | Codex 界面 `/model` 选择 | `gpt-6-astra` / `medium` |
+| Executor（执行方） | 明确参考与目标，制作修改、运行验证、整合结果、修复审核问题并负责交付 | 可读、可写、可运行测试；遵守当前授权范围 |
+| Reviewer（审核方） | 对照原始角色参考、验收基线、本轮目标和实际证据做独立只读审核 | 只读；不改文件、不调用生图/API、不修改配置、不派生子 Agent |
 
-子 Agent 的默认值由两层保证：
-
-- `[agents]`：`default_subagent_model = "gpt-6-astra"`，`default_subagent_reasoning_effort = "medium"`
-- `live2d-reviewer.toml`：Reviewer 角色固定 `gpt-6-astra` / `medium`，且提示中说明这些值不可更改
-
-因此主 Agent 无论选择什么模型/Effort，子 Agent 都不会继承主 Agent 的选择。
+审核不绑定模型，也不以模型名称或角色是否注册作为审核完成依据。自动检查、独立审核和美术/运动视觉验收分别说明，不相互冒充。
 
 ## Reviewer 调用
+
+优先使用当前会话可用的 `live2d-reviewer`：
 
 ```text
 spawn_agent(
   agent_type="live2d-reviewer",
   task_name="review_<scope>",
-  message="<文件/图层范围；明确只读>"
+  message="只读审核指定范围；对照原始参考、当前验收基线和本轮目标。禁止写文件、生图/API和派生子 Agent。返回结论与证据。"
 )
 ```
 
-Reviewer 关注代码、架构、Live2D 图层顺序与遮挡、alpha/裁切/遮罩、PSD/MOC3/纹理/绘制顺序、命中区域、参数边界、物理，以及测试声明是否有证据。
+角色不可用时，使用普通原生子 Agent，并在任务中完整传入相同的只读职责和输出要求。角色调用失败不能计为已审核。
 
-只读是角色指令约束；原生子 Agent 继承工具权限，不是独立沙箱。Executor 必须在任务描述中明确禁止写入，只派发只读检查。
+只读是角色指令约束，不是独立沙箱；执行方必须在任务描述中明确禁止写入，只派发只读检查。
 
-## 验证记录（2026-10-27）
+## 配置边界
 
-本次维护只更新说明和目录，没有重新验证在线模型调用。以下为此前已验证的配置事实：
+- 项目不保存模型/Effort 默认值，不提供专用 Profile 或模型启动脚本。
+- 直接使用 Codex 桌面、VS Code 或 CLI 启动；模型在当前会话中选择。
+- Provider 由 CC Switch 当前线路决定；执行与审核在同一线路下运行，不跨 Provider。
+- 不修改 `~/.codex/config.toml`、`~/.codex/auth.json`、`[model_providers.*]`；这些由 CC Switch 管理。
+- `codex/agents/live2d-reviewer.toml` 只保存只读职责、权限、输入输出和审查标准，不包含模型/Effort 字段。
 
-已通过：
+## 历史说明
 
-- 合并后的 `live2d` Profile 可加载；主模型不再被 Profile 固定（实测解析为 Codex 默认 `gpt-6.1-sol`，Effort 未由 Profile 设置，可在界面 `/model` 修改）。
-- `live2d-reviewer` 已出现在原生 `spawn_agent` 的可用角色中，固定为 `gpt-6-astra` / `medium`。
-- 项目 `AGENTS.md` 已进入 Codex 提示词。
-- 启动脚本自动识别当前官方线路；`./scripts/codex-live2d official` 通过，`./scripts/codex-live2d beefapi` 在当前官方线路下按预期拒绝。
-- `[agents]` 配置被 Codex 接受，没有新增 unrecognized 警告；现有警告仅来自全局 `mcp_servers.computer-use.type`。
+2026-10-27 的专用 Profile、模型默认值和启动/安装脚本已在 2026-10-29 移除，不再作为当前入口。历史进度中的 Reviewer/子 Agent 记录属于当时流程，不代表当前存在模型绑定或专用 Profile。
 
-尚未验证：
+## 当前审核重点
 
-- 官方 Plus 实际模型调用：当前账号触发用量限制，Codex 返回 “You've hit your usage limit”，预计 18:30 后恢复。
-- 主 Agent 实际调用 `live2d-reviewer` 的在线闭环：依赖上面的模型调用，当前无法执行。
-- BeefAPI 实际调用：需要先在 CC Switch 手动切到 BeefAPI。
-
-恢复额度或切到 BeefAPI 后，可运行：
-
-```sh
-./scripts/codex-live2d exec --skip-git-repo-check -s read-only \
-  '调用 spawn_agent(agent_type="live2d-reviewer", task_name="review_smoke", message="只读检查 README.md 的结构，不要修改文件。")，然后返回 Reviewer 的结论。'
-```
-
-然后检查会话 JSONL 中是否出现 `spawn_agent`、`live2d-reviewer`，以及子 Agent 的 `turn_context` 是否为 `gpt-6-astra` / `medium`。
+- See-through候选图层顺序、眼部/头发遮挡、耳根与后发隐藏区、alpha与裁切。
+- PSD/Manifest/纹理/锚点及候选哈希一致性。
+- Anime2.5DRig与Cubism验证声明是否有对应证据；区分独立PSD原生闭眼试验层与 Anime2.5DRig 运行时合成层，不可相互冒充。
+- 已验收素材是否被破坏；历史v5/v6审核结论不得转移给See-through候选。

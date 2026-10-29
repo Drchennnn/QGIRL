@@ -1,0 +1,140 @@
+{
+  "status": "complete_limited_eye_motion_poc_clear_with_watch",
+  "canvas": [
+    1024,
+    1024
+  ],
+  "adapterPSD": "exports/anime25d_adapter.psd",
+  "workingPSD": "exports/front_eye_poc_006.psd",
+  "layerOrder": "top_to_bottom",
+  "layers": [
+    {
+      "name": "headwear_1",
+      "file": "exports/adapter_layers/rig_0000_headwear_1.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "eyebrow_1",
+      "file": "exports/adapter_layers/rig_0001_eyebrow_1.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "irides_1",
+      "file": "exports/adapter_layers/rig_0002_irides_1.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "eye_close_1",
+      "file": "exports/adapter_layers/rig_0003_eye_close_1.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "irides_2",
+      "file": "exports/adapter_layers/rig_0004_irides_2.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "eye_close_2",
+      "file": "exports/adapter_layers/rig_0005_eye_close_2.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "eyelash_1",
+      "file": "exports/adapter_layers/rig_0006_eyelash_1.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "eyelash_2",
+      "file": "exports/adapter_layers/rig_0007_eyelash_2.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "eyewhite_1",
+      "file": "exports/adapter_layers/rig_0008_eyewhite_1.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "eyewhite_2",
+      "file": "exports/adapter_layers/rig_0009_eyewhite_2.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "front hair_1",
+      "file": "exports/adapter_layers/rig_0010_front hair_1.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "side hair_1",
+      "file": "exports/adapter_layers/rig_0011_side hair_1.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "side hair_2",
+      "file": "exports/adapter_layers/rig_0012_side hair_2.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "face_3",
+      "file": "exports/adapter_layers/rig_0013_face_3.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "face_2",
+      "file": "exports/adapter_layers/rig_0014_face_2.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "face_1",
+      "file": "exports/adapter_layers/rig_0015_face_1.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "back hair_3",
+      "file": "exports/adapter_layers/rig_0016_back hair_3.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "back hair_4",
+      "file": "exports/adapter_layers/rig_0017_back hair_4.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "back hair_2",
+      "file": "exports/adapter_layers/rig_0018_back hair_2.png",
+      "visibleForImport": true
+    },
+    {
+      "name": "back hair_1",
+      "file": "exports/adapter_layers/rig_0019_back hair_1.png",
+      "visibleForImport": true
+    }
+  ],
+  "closedVisibility": "closed reference layers visible so Rigger imports;runtime decides opacity;do not judge adapter flattened composite as neutral",
+  "sourceAccepted": "../front_hair_poc_003_3",
+  "sourceCandidate": "../front_eye_poc_005",
+  "newImageGenerations": 0,
+  "modalRuns": 0,
+  "independentReview": {
+    "result": "CLEAR_LIMITED_EYE_MOTION_POC_WITH_WATCH",
+    "reviewer": "review006",
+    "resolved": [
+      "eye contours stay behind front/side hair",
+      "stationary outer-eye triangle caused by005 min/max silhouette removed",
+      "low-open gray ghost removed by006 explicit mesh overlay"
+    ],
+    "watch": [
+      "closed line thinner and slightly angular/fragmented",
+      "mid/low-open outer corners remain sharp",
+      "saved phase frames reviewed,not subjective live playback or final refined art"
+    ],
+    "scope": "actual upstream Worker/Rigger/WebGL with006 app overlay;original upstream fade remainsBLOCK",
+    "evidence": "15 captured poses,inputPSD/runtime hash match,neutral restored exact pixels"
+  },
+  "finalRuntimeReport": "reports/anime25d_mesh_final/runtime_validation.json",
+  "preview": {
+    "url": "http://127.0.0.1:50166/006-ready",
+    "localOnly": true,
+    "runtimeOverlay": "runtime/app.js",
+    "serverCommand": "RUNTIME_APP=\"experiments/seethrough_anime25d/layers/front_eye_poc_006/runtime/app.js\" node experiments/seethrough_anime25d/layers/front_eye_poc_006/scripts/run_preview.cjs experiments/seethrough_anime25d/layers/front_eye_poc_006/exports/anime25d_adapter.psd experiments/seethrough_anime25d/layers/front_eye_poc_006/reports/anime25d_mesh_final/neutral.rig.json"
+  }
+}

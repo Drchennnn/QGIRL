@@ -1,6 +1,6 @@
 # 归档索引
 
-本目录保存 2026-10-27 项目维护时从根目录移出的历史内容。当前仓库不是 Git 仓库，因此移动使用普通 `mv`，没有 `git mv` 历史；移动前的关键文件哈希和移动清单见 [move_manifest.json](move_manifest.json)。
+本目录保存 2026-10-27 项目维护时从根目录移出的历史内容。移动前的关键文件哈希和清单见 [move_manifest.json](move_manifest.json)。
 
 ## 分类
 
@@ -12,10 +12,8 @@
 
 ## 仍然有效、未归档的内容
 
-- `live2d_v1`–`live2d_v4`：历史版本基线。`live2d_v4` 仍是 v5 回归测试的直接基线，不能移动。
-- `live2d_v5`：当前已验收交付。
-- `live2d_v5_1`：v5 头发耳根/脸颊边缘修补实验；29 项自动检查中 28 项通过、1 项眼睑重叠失败，视觉验收未完成，不是当前交付。
-- `docs/`、`codex/`、`scripts/`、`references/`、`参考/`、`服设/`、`build/`。
+- `live2d_v1`–`live2d_v5_1`：保留在仓库根目录的历史自行拆分版本，便于追溯；均不是当前 See-through 主线素材。
+- `docs/`、`codex/`、`scripts/`、`参考/`、`服设/`。
 - `scripts/live2d_v1_pack.py`：从旧 `work/` 移出的当前 PSD 打包入口，v1–v5 构建命令仍使用它。
 
 ## 使用规则

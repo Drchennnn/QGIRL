@@ -1,0 +1,40 @@
+{
+  "id": "seethrough_anime25d",
+  "date": "2026-10-29",
+  "status": "eye_close_trial_v2_user_visual_approval_pending_cubism_validation",
+  "mainline": "See-through-derived front character; previous self-split versions are historical",
+  "upstream": {
+    "seeThroughCommit": "df019de5129d6c4b406587a14c3501669441a783",
+    "anime25dRigCommit": "7ddbd9943ea3152561b3dc8348fd752c850f3e95"
+  },
+  "candidates": {
+    "openEyePsdSha256": "aefff81aa95050179db8eccf0818477a14389c8a98d0b6eb27e7ac03a6975d1a",
+    "cubismPreflightPsdSha256": "9bd3eadc9b45c3a7e9a7500f25ff3e2f444acba20b39d7650b647dad81e56831",
+    "eyeCloseTrialPsdSha256": "394d9ef9edfc21112c8b94f21a83bd1efdc65f57f9ab12ebbef6215a0c119634"
+  },
+  "eyeCloseTrial": {
+    "nativeParts": 2,
+    "syntheticRuntimeParts": 0,
+    "frontHairAboveEyeClose": true,
+    "sourcePngHadAlpha": false,
+    "sourcePngBackgroundWasBaked": true,
+    "uniformScale": 0.7,
+    "runtimeLayers": 20,
+    "blinkPoses": 15,
+    "bilateralClosure": true,
+    "independentLeftAndRightClosure": true,
+    "smallMotionCapture": true,
+    "exactNeutralRestore": true,
+    "unknownLayers": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "status": "TECHNICAL_PASS_USER_VISUALLY_APPROVED_CUBISM_VALIDATION_PENDING"
+  },
+  "notComplete": [
+    "Cubism Editor import, binding, and parameter editing",
+    "CMO3/MOC3 save and reopen",
+    "approximately +/-30 degree head turn and dynamic occlusion"
+  ],
+  "visualAcceptance": "user_approved_2026-10-29",
+  "assetPolicy": "PSD, raster images, and runtime captures are not included in this public code snapshot."
+}

@@ -19,3 +19,5 @@ archive/legacy_character_pipeline/src/
 *.jpeg
 *.gif
 *.webp
+experiments/**/upstream/
+experiments/**/adapters/modal_run_spec.json

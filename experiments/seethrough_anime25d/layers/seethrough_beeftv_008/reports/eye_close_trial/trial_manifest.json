@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-29",
+  "status": "TECHNICAL_PASS_USER_VISUALLY_APPROVED_CUBISM_VALIDATION_PENDING",
+  "purpose": "Sanitized status for the isolated native eye_close PSD candidate",
+  "psd": {
+    "file": "eyes_reconnected_symmetry_eye_close_trial_v2.psd",
+    "sha256": "394d9ef9edfc21112c8b94f21a83bd1efdc65f57f9ab12ebbef6215a0c119634",
+    "published": false,
+    "nativeLayers": ["eye_close_1", "eye_close_2"],
+    "frontHairAboveEyeClose": true,
+    "openEyePartsRetained": true
+  },
+  "processing": {
+    "uniformScale": 0.7,
+    "approximatePartSizePx": [133, 32],
+    "sourceHadBakedBackground": true,
+    "antialiasingLimitation": "Grayscale edge values were lost during extraction. The user confirmed the result looks good at preview scale."
+  },
+  "runtimeValidation": {
+    "upstreamCommit": "7ddbd9943ea3152561b3dc8348fd752c850f3e95",
+    "rigLayers": 20,
+    "blinkPoses": 15,
+    "nativeEyeCloseParts": 2,
+    "syntheticEyeCloseParts": 0,
+    "bilateralClosure": true,
+    "independentScreenSideClosure": true,
+    "smallMotion": true,
+    "backgroundFrames": 45,
+    "exactNeutralRestore": true,
+    "unknownLayers": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  },
+  "next": [
+    "Verify PSD import, binding, and parameter editing in Cubism Editor.",
+    "Verify CMO3/MOC3 save and reopen.",
+    "Test approximately +/-30 degree head turn and dynamic occlusion."
+  ]
+}

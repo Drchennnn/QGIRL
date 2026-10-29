@@ -1,0 +1,29 @@
+{
+  "status": "TECHNICAL_PASS_USER_VISUALLY_APPROVED_CUBISM_VALIDATION_PENDING",
+  "userVisualAcceptance": "approved_2026-10-29",
+  "source": "Fixed Anime2.5DRig upstream and local test harness",
+  "upstreamCommit": "7ddbd9943ea3152561b3dc8348fd752c850f3e95",
+  "nativeEyeCloseRoles": {
+    "screenLeft": true,
+    "screenRight": true,
+    "synthetic": 0
+  },
+  "runtimeLayerCount": 20,
+  "blinkPoseCount": 15,
+  "bilateralClose": true,
+  "singleEyeClose": {
+    "screenLeft": true,
+    "screenRight": true
+  },
+  "smallMotionCapture": true,
+  "backgroundFrames": 45,
+  "exactNeutralRestore": true,
+  "unknownLayers": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "verificationRun": "PASS actual eye_close_trial v2 PSD; 45 background frames and matching UI screenshots",
+  "limitations": [
+    "Evidence uses static captures; continuous playback was not reviewed.",
+    "This does not validate Cubism Editor import, CMO3/MOC3 output, or approximately +/-30 degree head-turn occlusion."
+  ]
+}

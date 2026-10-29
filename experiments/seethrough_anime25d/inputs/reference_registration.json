@@ -1,0 +1,120 @@
+{
+  "source": "inputs/original_head_design.png",
+  "sourceSha256": "7e6b48437d6e995dd8b938d5b3faf25298f361e189065a2256f84ae40a2a1423",
+  "views": {
+    "front": {
+      "file": "inputs/reference_front.png",
+      "sourceBox": [
+        40,
+        80,
+        706,
+        850
+      ],
+      "size": [
+        666,
+        770
+      ],
+      "sha256": "252b82dbcc8fb352f5bac2a08df2f4bc2786b501e61708a5166ac69eac769f6a",
+      "sourcePixelDifferences": 0,
+      "resampled": false
+    },
+    "three_quarter": {
+      "file": "inputs/reference_three_quarter.png",
+      "sourceBox": [
+        708,
+        74,
+        1125,
+        535
+      ],
+      "size": [
+        417,
+        461
+      ],
+      "sha256": "54a53793f7f58682c2d022c3d06d788e83e09447756eb0e9652b5381ce25b746",
+      "sourcePixelDifferences": 0,
+      "resampled": false
+    },
+    "profile": {
+      "file": "inputs/reference_profile.png",
+      "sourceBox": [
+        1128,
+        68,
+        1536,
+        551
+      ],
+      "size": [
+        408,
+        483
+      ],
+      "sha256": "3fddf0db0296f38fca382906c45e297172e0c21b817a404bd8a0b51cac9f3bc7",
+      "sourcePixelDifferences": 0,
+      "resampled": false
+    },
+    "back": {
+      "file": "inputs/reference_back.png",
+      "sourceBox": [
+        730,
+        548,
+        1112,
+        947
+      ],
+      "size": [
+        382,
+        399
+      ],
+      "sha256": "3d858097b2d5c4a87aa3e0730f15032b15ae8c86cae2bda0c6777b3346173d70",
+      "sourcePixelDifferences": 0,
+      "resampled": false
+    },
+    "eye_detail": {
+      "file": "inputs/reference_eye_detail.png",
+      "sourceBox": [
+        1142,
+        606,
+        1518,
+        877
+      ],
+      "size": [
+        376,
+        271
+      ],
+      "sha256": "2674d08a1bc1746d1f7ac341d8ea53eb04abb033f685df93800eaf0f91c47482",
+      "sourcePixelDifferences": 0,
+      "resampled": false
+    }
+  },
+  "inferenceInput": "inputs/reference_front.png",
+  "physicalViewAnglesCalibrated": false,
+  "frontLandmarksSourcePixels": {
+    "crown": [
+      392,
+      113
+    ],
+    "chin": [
+      391,
+      694
+    ],
+    "iris_screen_left": [
+      298,
+      514
+    ],
+    "iris_screen_right": [
+      477,
+      507
+    ],
+    "mouth_center": [
+      389,
+      608
+    ]
+  },
+  "landmarkPrecision": "manual reference anchors; not calibrated geometry",
+  "features": [
+    "screen-left lightning clip",
+    "two signature hair highlights",
+    "white inner dye",
+    "tapered brows and pointed outer lashes",
+    "cyan U-shaped irises",
+    "unequal angled fringe tips"
+  ],
+  "note": "Native front crop is 666x770; enlargement is not new detail."
+}

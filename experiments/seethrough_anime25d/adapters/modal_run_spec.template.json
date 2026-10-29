@@ -1,0 +1,24 @@
+{
+  "status": "replace_with_local_authorization",
+  "upstream": {
+    "repository": "https://github.com/shitagaki-lab/see-through",
+    "commit": "df019de5129d6c4b406587a14c3501669441a783",
+    "localPatchSha256": "da55b5f3237518f2caea8b933e581d574614626009f978f1e08d081be0490983",
+    "localPatch": "character-view-aware-head-v2-existing-part-metadata"
+  },
+  "inputs": [
+    {
+      "file": "inputs/reference_profile.png",
+      "sha256": "replace_with_local_input_hash"
+    },
+    {
+      "file": "inputs/reference_back.png",
+      "sha256": "replace_with_local_input_hash"
+    }
+  ],
+  "additionalRecoveryInput": {
+    "file": "inputs/reference_three_quarter.png",
+    "sha256": "replace_with_local_input_hash"
+  },
+  "note": "Template only. This file does not authorize a Modal invocation. Create a private modal_run_spec.json, verify all input hashes, and explicitly authorize each paid call before running."
+}

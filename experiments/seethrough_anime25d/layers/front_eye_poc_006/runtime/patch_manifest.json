@@ -1,0 +1,22 @@
+{
+  "scope": "front_eye_poc_006 only;1024px anime25d_adapter PSD",
+  "upstreamCommit": "7ddbd9943ea3152561b3dc8348fd752c850f3e95",
+  "originalAppSHA256": "6adea8f44cd3989ee4d86aed97ba3a996a24c39202c64cc6c054ddcff4e87877",
+  "overlayAppSHA256": "6307456016ee0bb03d036a821d7840cc744fa07e79508804ce4e0c335316225a",
+  "config": "blink_config.json",
+  "diff": "app.patch.diff",
+  "serve": "RUNTIME_APP=<absolute006/runtime/app.js> node scripts/test_anime25d.cjs or scripts/run_preview.cjs",
+  "changes": [
+    "006 filename/canvas guard",
+    "disable complementary open/closed opacity;closed reference renders0",
+    "single textured eyelash mesh maps continuously to hand-drawn closed curve",
+    "eyewhite mesh maps to zero-height closed curve;iris keeps shape and uses real upstream mask"
+  ],
+  "unchanged": [
+    "upstream files",
+    "PSD parser/Worker/Rigger",
+    "WebGL renderer",
+    "non-eye deformation",
+    "unmatched filenames/canvas use original upstream policy"
+  ]
+}

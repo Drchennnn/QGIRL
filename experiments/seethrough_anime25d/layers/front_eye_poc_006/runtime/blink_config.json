@@ -1,0 +1,110 @@
+{
+  "scope": "front_eye_poc_006 only;1024px anime25d_adapter PSD",
+  "filenamePattern": "^anime25d_adapter(?:[_.-].*)?\\.psd$",
+  "policy": "single textured lash mesh;no eyeOpen/eyeClose opacity crossfade",
+  "canvas": [
+    1024,
+    1024
+  ],
+  "sourceY": [
+    518,
+    542
+  ],
+  "closedThickness": 8,
+  "L": {
+    "sourceX": [
+      295,
+      478
+    ],
+    "targetX": [
+      326,
+      465
+    ],
+    "curve": [
+      [
+        [
+          326,
+          568
+        ],
+        [
+          350,
+          582
+        ],
+        [
+          365,
+          590
+        ],
+        [
+          391,
+          589
+        ]
+      ],
+      [
+        [
+          391,
+          589
+        ],
+        [
+          423,
+          590
+        ],
+        [
+          447,
+          584
+        ],
+        [
+          465,
+          575
+        ]
+      ]
+    ]
+  },
+  "R": {
+    "sourceX": [
+      593,
+      778
+    ],
+    "targetX": [
+      600,
+      750
+    ],
+    "curve": [
+      [
+        [
+          600,
+          579
+        ],
+        [
+          622,
+          587
+        ],
+        [
+          643,
+          589
+        ],
+        [
+          669,
+          583
+        ]
+      ],
+      [
+        [
+          669,
+          583
+        ],
+        [
+          700,
+          581
+        ],
+        [
+          728,
+          574
+        ],
+        [
+          750,
+          561
+        ]
+      ]
+    ]
+  }
+}
